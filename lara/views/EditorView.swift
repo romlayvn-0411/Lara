@@ -87,14 +87,6 @@ struct EditorView: View {
                         Text("Apply Modified MobileGestalt")
                     }
                     .disabled(!valid)
-                    
-                    Button() {
-                        revert()
-                    } label: {
-                        Text("Revert MobileGestalt")
-                            .foregroundColor(.red)
-                            .disabled(true)
-                    }
                 } header: {
                     Text("Apply")
                 } footer: {
@@ -169,24 +161,6 @@ struct EditorView: View {
         } catch {
             status = "failed to write plist: \(error.localizedDescription)"
             return
-        }
-    }
-
-    private func revert() {
-        let fm = FileManager.default
-        if fm.fileExists(atPath: ogmgurl.path) {
-            do {
-                let data = try Data(contentsOf: ogmgurl)
-                try data.write(to: URL(fileURLWithPath: path), options: .atomic)
-                mgr.logmsg("reverted mobilegestalt plist")
-                mg = try NSMutableDictionary(contentsOf: URL(fileURLWithPath: path), error: ())
-                alert = "Reverted MobileGestalt plist, respring to see changes."
-            } catch {
-                status = "Failed to replace modified plist with original: \(error.localizedDescription)"
-                return
-            }
-        } else {
-            status = "Failed to revert mobilegestalt: \(ogmgurl.absoluteString) was not found"
         }
     }
     
