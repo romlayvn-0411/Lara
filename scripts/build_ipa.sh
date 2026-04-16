@@ -22,7 +22,7 @@ done
 
 PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 SCHEME="lara"
-CONFIGURATION="Release"
+CONFIGURATION="Debug"
 APP_NAME="lara"
 DIST_DIR="$PROJECT_DIR/dist"
 PAYLOAD_DIR="$DIST_DIR/Payload"
