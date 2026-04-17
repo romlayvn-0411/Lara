@@ -10,13 +10,14 @@ permissions:
 
 jobs:
   build:
-    runs-on: macos-14
+    runs-on: macos-26
     strategy:
       matrix:
         include:
           - arch: arm64e
             flag: ""
             suffix: ""
+            
     steps:
       - name: checkout
         uses: actions/checkout@v4
