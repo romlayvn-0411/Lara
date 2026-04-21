@@ -59,7 +59,7 @@ struct EditorView: View {
             _status = State(initialValue: "Failed to get dictionaries from MobileGestalt. Reopen the page.")
             return
         }
-        guard let subType = oPeik["ArtworkDeviceSubType"] as? Int {
+        guard let subType = oPeik["ArtworkDeviceSubType"] as? Int else {
             _status = State(initialValue: "Failed to get SubType from MobileGestalt. Reopen the page.")
             return
         }
