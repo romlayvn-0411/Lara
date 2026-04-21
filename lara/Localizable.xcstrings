@@ -15,6 +15,18 @@
             "state": "translated",
             "value": "./ipsw extract --kernel [kéo file ipsw của bạn vào đây]"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "./ipsw extract --kernel [将您的 ipsw 拖放到此处]"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "./ipsw extract --kernel [اسحب ملف ipsw هنا]"
+          }
         }
       }
     },
@@ -31,6 +43,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "1. Tải công cụ IPSW cho thiết bị của bạn."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1. 为您的设备下载 IPSW 工具。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1. قم بتنزيل أداة IPSW لجهازك."
           }
         }
       }
@@ -49,6 +73,18 @@
             "state": "translated",
             "value": "1. Chuyển sang chế độ Hybrid trong cài đặt \\n2. Thoát Sandbox \\n3. Khởi tạo VFS\\n4. Thử lại."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1. 在设置中切换到混合模式 \\n2. 逃逸沙盒 \\n3. 初始化 VFS\\n4. 重试。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1. قم بالتبديل إلى الوضع الهجين في الإعدادات \\n2. الهروب من Sandbox \\n3. تهيئة VFS \\n4. حاول مرة أخرى."
+          }
         }
       }
     },
@@ -65,6 +101,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "2. Giải nén tệp lưu trữ."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2. 解压缩文件。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2. استخراج الأرشيف."
           }
         }
       }
@@ -83,6 +131,18 @@
             "state": "translated",
             "value": "3. Mở Terminal."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3. 打开终端 (Terminal)。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3. افتح الوحدة الطرفية (Terminal)."
+          }
         }
       }
     },
@@ -99,6 +159,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "4. Di chuyển đến thư mục đã giải nén:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4. 导航到解压后的文件夹："
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4. انتقل إلى المجلد المستخرج:"
           }
         }
       }
@@ -117,6 +189,18 @@
             "state": "translated",
             "value": "5. Trích xuất kernel:"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5. 提取内核："
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5. استخراج النواة (Kernel):"
+          }
         }
       }
     },
@@ -133,6 +217,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "6. Lấy file kernelcache."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6. 获取 kernelcache 文件。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6. احصل على ملف kernelcache."
           }
         }
       }
@@ -151,6 +247,18 @@
             "state": "translated",
             "value": "7. Chuyển file kernelcache sang iCloud hoặc iPhone của bạn."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7. 将 kernelcache 传输到您的 iCloud 或 iPhone。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7. انقل kernelcache إلى iCloud أو iPhone الخاص بك."
+          }
         }
       }
     },
@@ -167,6 +275,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "8. Nhấn vào nút bên trên và chọn file kernelcache, ví dụ: kernelcache.release.iPhone14,3."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "8. 点击上方按钮并选择 kernelcache，例如 kernelcache.release.iPhone14,3。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "8. اضغط على الزر أعلاه وحدد kernelcache، على سبيل المثال kernelcache.release.iPhone14,3."
           }
         }
       }
@@ -185,6 +305,18 @@
             "state": "translated",
             "value": "Nút Tác vụ (iOS 17+)"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "操作按钮 (iOS 17+)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "زر الإجراء (iOS 17+)"
+          }
         }
       }
     },
@@ -201,6 +333,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Hành động"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "操作"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الإجراءات"
           }
         }
       }
@@ -219,6 +363,18 @@
             "state": "translated",
             "value": "Thêm"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة"
+          }
         }
       }
     },
@@ -235,6 +391,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tất cả các tweak của DirtyZero và sự hỗ trợ tinh thần."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "所有的 DirtyZero 插件和情感支持。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جميع تعديلات DirtyZero والدعم العاطفي."
           }
         }
       }
@@ -253,6 +421,18 @@
             "state": "translated",
             "value": "Cho phép >10 icon trên Dock"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允许 Dock 栏超过 10 个图标"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "السماح بأكثر من 10 أيقونات في شريط Dock"
+          }
         }
       }
     },
@@ -269,6 +449,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Cho phép cài app iPadOS"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允许安装 iPadOS 应用程序"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "السماح بتثبيت تطبيقات iPadOS"
           }
         }
       }
@@ -287,6 +479,18 @@
             "state": "translated",
             "value": "Màn hình luôn bật (18.0+)"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "全天候显示 (18.0+)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العرض الدائم (18.0+)"
+          }
         }
       }
     },
@@ -303,6 +507,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Áp dụng"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "应用"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تطبيق"
           }
         }
       }
@@ -321,6 +537,18 @@
             "state": "translated",
             "value": "Áp dụng Cột Dock"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "应用 Dock 列数"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تطبيق أعمدة Dock"
+          }
         }
       }
     },
@@ -337,6 +565,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Áp dụng MobileGestalt đã sửa đổi"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "应用修改后的 MobileGestalt"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تطبيق MobileGestalt المعدل"
           }
         }
       }
@@ -355,6 +595,18 @@
             "state": "translated",
             "value": "Áp dụng Theme Mật khẩu"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "应用密码主题"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تطبيق سمة رمز المرور"
+          }
         }
       }
     },
@@ -371,6 +623,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Theme Khả dụng"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "可用主题"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "السمات المتاحة"
           }
         }
       }
@@ -389,6 +653,18 @@
             "state": "translated",
             "value": "Hình nền"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "背景"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الخلفيات"
+          }
         }
       }
     },
@@ -405,6 +681,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Cơ bản"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "基础"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أساسي"
           }
         }
       }
@@ -423,6 +711,18 @@
             "state": "translated",
             "value": "Âm thanh khởi động"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "开机提示音"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صوت بدء التشغيل"
+          }
         }
       }
     },
@@ -439,6 +739,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Bỏ qua giới hạn 3 ứng dụng"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "绕过 3 个应用限制"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تجاوز حد 3 تطبيقات"
           }
         }
       }
@@ -457,6 +769,18 @@
             "state": "translated",
             "value": "Nút Camera (18.0rc+)"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "相机按钮 (18.0rc+)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "زر الكاميرا (18.0rc+)"
+          }
         }
       }
     },
@@ -473,6 +797,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Hủy"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "取消"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إلغاء"
           }
         }
       }
@@ -491,6 +827,18 @@
             "state": "translated",
             "value": "Giới hạn sạc (iOS 17+)"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "充电限制 (iOS 17+)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حد الشحن (iOS 17+)"
+          }
         }
       }
     },
@@ -507,6 +855,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Chọn File Nguồn"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择源文件"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اختر الملف المصدر"
           }
         }
       }
@@ -525,6 +885,18 @@
             "state": "translated",
             "value": "Dọn dẹp"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清理"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تنظيف"
+          }
         }
       }
     },
@@ -541,6 +913,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Xóa toàn bộ Key"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清除所有键"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مسح جميع المفاتيح"
           }
         }
       }
@@ -559,6 +943,18 @@
             "state": "translated",
             "value": "Sao chép"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "复制"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نسخ"
+          }
         }
       }
     },
@@ -575,6 +971,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Phát hiện Va chạm (có thể không hoạt động)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "车祸检测 (可能无效)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اكتشاف الأعطال (قد لا يعمل)"
           }
         }
       }
@@ -593,6 +1001,18 @@
             "state": "translated",
             "value": "Tác giả"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "致谢"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الاعتمادات"
+          }
         }
       }
     },
@@ -609,6 +1029,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Hiện đang bị lỗi."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "当前已损坏。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "معطل حاليا."
           }
         }
       }
@@ -627,6 +1059,18 @@
             "state": "translated",
             "value": "Ghi đè Đường dẫn Tùy chỉnh"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自定义路径覆盖"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استبدال المسار المخصص"
+          }
         }
       }
     },
@@ -643,6 +1087,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Khu vực Nguy hiểm"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "危险区域"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "منطقة الخطر"
           }
         }
       }
@@ -661,6 +1117,18 @@
             "state": "translated",
             "value": "Trình Gỡ lỗi"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "调试器"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مصحح الأخطاء"
+          }
         }
       }
     },
@@ -677,6 +1145,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Xóa"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "删除"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حذف"
           }
         }
       }
@@ -695,6 +1175,18 @@
             "state": "translated",
             "value": "Xóa Dữ liệu Kernelcache"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "删除 Kernelcache 数据"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حذف بيانات Kernelcache"
+          }
         }
       }
     },
@@ -711,6 +1203,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Việc xóa và tải lại Kernelcache có thể khắc phục nhiều sự cố. Hãy thử cách này trước khi báo cáo lỗi trên GitHub."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "删除并重新下载 Kernelcache 可以解决许多问题。在提交 GitHub 问题前请先尝试此操作。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قد يؤدي حذف Kernelcache وإعادة تنزيله إلى إصلاح العديد من المشكلات. جرب هذا قبل إنشاء مشكلة على GitHub."
           }
         }
       }
@@ -729,6 +1233,18 @@
             "state": "translated",
             "value": "Hủy RemoteCall"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "销毁 RemoteCall"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تدمير RemoteCall"
+          }
         }
       }
     },
@@ -745,6 +1261,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Gỡ (Detach)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "分离"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فصل"
           }
         }
       }
@@ -763,6 +1291,18 @@
             "state": "translated",
             "value": "Tắt dải phân cách log"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "禁用日志分隔符"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعطيل فواصل السجل"
+          }
         }
       }
     },
@@ -779,6 +1319,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tắt giới hạn Vùng"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "禁用区域限制"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعطيل قيود المنطقة"
           }
         }
       }
@@ -797,6 +1349,18 @@
             "state": "translated",
             "value": "Cột Dock"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dock 列数"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أعمدة Dock"
+          }
         }
       }
     },
@@ -813,6 +1377,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tải Kernelcache"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下载 Kernelcache"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تنزيل Kernelcache"
           }
         }
       }
@@ -831,6 +1407,18 @@
             "state": "translated",
             "value": "Dynamic Island (17.4+, có thể không hoạt động)"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "灵动岛 (17.4+, 可能无效)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الجزيرة الديناميكية (17.4+، قد لا تعمل)"
+          }
         }
       }
     },
@@ -847,6 +1435,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sửa Số Thẻ"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "编辑卡号"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعديل رقم البطاقة"
           }
         }
       }
@@ -865,6 +1465,18 @@
             "state": "translated",
             "value": "Bật"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "启用"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تفعيل"
+          }
         }
       }
     },
@@ -881,6 +1493,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Bật Floating Dock (Lỗi)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "启用悬浮 Dock (已损坏)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تفعيل Dock العائم (معطل)"
           }
         }
       }
@@ -899,6 +1523,18 @@
             "state": "translated",
             "value": "Bật Grid App Switcher (Lỗi hiệu ứng)"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "启用网格应用切换器 (动画损坏)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تفعيل مبدل التطبيقات الشبكي (حركة معطلة)"
+          }
         }
       }
     },
@@ -915,6 +1551,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Bật Xoay ngược"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "启用倒置"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تفعيل الانقلاب الرأسي"
           }
         }
       }
@@ -933,6 +1581,18 @@
             "state": "translated",
             "value": "Thoát Sandbox"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "逃逸沙盒"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الهروب من Sandbox"
+          }
         }
       }
     },
@@ -949,6 +1609,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Đang thoát Sandbox..."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在逃逸沙盒..."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جاري الهروب من Sandbox..."
           }
         }
       }
@@ -967,6 +1639,18 @@
             "state": "translated",
             "value": "Exploit Thất bại"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "漏洞利用失败"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فشل الاستغلال"
+          }
         }
       }
     },
@@ -983,6 +1667,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Lấy Kernelcache"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "获取 Kernelcache"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جلب Kernelcache"
           }
         }
       }
@@ -1001,6 +1697,18 @@
             "state": "translated",
             "value": "Trình Quản lý File chưa sẵn sàng"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "文件管理器未就绪"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مدير الملفات غير جاهز"
+          }
         }
       }
     },
@@ -1017,6 +1725,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Đầy đủ"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完整"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "كامل"
           }
         }
       }
@@ -1035,6 +1755,18 @@
             "state": "translated",
             "value": "Thời gian GPU"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GPU 时间"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "وقت GPU"
+          }
         }
       }
     },
@@ -1051,6 +1783,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Lỗi hiển thị"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "故障"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مواطن الخلل"
           }
         }
       }
@@ -1069,6 +1813,18 @@
             "state": "translated",
             "value": "Ẩn Tên Icon"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隐藏图标标签"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إخفاء تسميات الأيقونات"
+          }
         }
       }
     },
@@ -1085,6 +1841,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Cách lấy kernelcache (trên macOS)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "如何获取 kernelcache (macOS)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "كيفية الحصول على kernelcache (macOS)"
           }
         }
       }
@@ -1103,6 +1871,18 @@
             "state": "translated",
             "value": "Nhập File .passthm / .zip"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "导入 .passthm / .zip 文件"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استيراد ملف .passthm / .zip"
+          }
         }
       }
     },
@@ -1119,6 +1899,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Nhập Font"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "导入字体"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استيراد الخط"
           }
         }
       }
@@ -1137,6 +1929,18 @@
             "state": "translated",
             "value": "Nhập Kernelcache từ Files"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "从文件导入 Kernelcache"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استيراد Kernelcache من الملفات"
+          }
         }
       }
     },
@@ -1153,6 +1957,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Nhập Theme"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "导入主题"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استيراد السمة"
           }
         }
       }
@@ -1171,6 +1987,18 @@
             "state": "translated",
             "value": "Theme Đã nhập"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已导入的主题"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "السمات المستوردة"
+          }
         }
       }
     },
@@ -1187,6 +2015,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Khởi tạo RemoteCall"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "初始化 RemoteCall"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تهيئة RemoteCall"
           }
         }
       }
@@ -1205,6 +2045,18 @@
             "state": "translated",
             "value": "Khởi tạo VFS"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "初始化 VFS"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تهيئة VFS"
+          }
         }
       }
     },
@@ -1221,6 +2073,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Đã khởi tạo Hybrid"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已初始化混合模式"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تمت تهيئة الوضع الهجين"
           }
         }
       }
@@ -1239,6 +2103,18 @@
             "state": "translated",
             "value": "Đã khởi tạo RemoteCall"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已初始化 RemoteCall"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تمت تهيئة RemoteCall"
+          }
         }
       }
     },
@@ -1255,6 +2131,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Đã khởi tạo VFS"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已初始化 VFS"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تمت تهيئة VFS"
           }
         }
       }
@@ -1273,6 +2161,18 @@
             "state": "translated",
             "value": "Đang khởi tạo RemoteCall..."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在初始化 RemoteCall..."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جاري تهيئة RemoteCall..."
+          }
         }
       }
     },
@@ -1289,6 +2189,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Đang khởi tạo VFS..."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在初始化 VFS..."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جاري تهيئة VFS..."
           }
         }
       }
@@ -1307,6 +2219,18 @@
             "state": "translated",
             "value": "Nguồn cảm hứng."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "灵感来源。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إلهام."
+          }
         }
       }
     },
@@ -1323,6 +2247,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ứng dụng Đã cài đặt"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已安装应用"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التطبيقات المثبتة"
           }
         }
       }
@@ -1341,6 +2277,18 @@
             "state": "translated",
             "value": "Thông tin Bộ nhớ trong"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "内部存储信息"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "معلومات التخزين الداخلي"
+          }
         }
       }
     },
@@ -1357,6 +2305,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Thành phần Nội bộ"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "内部内容"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أشياء داخلية"
           }
         }
       }
@@ -1375,6 +2335,18 @@
             "state": "translated",
             "value": "Cấp Token"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "签发令牌"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إصدار الرمز (Token)"
+          }
         }
       }
     },
@@ -1391,6 +2363,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Giữ chạy nền (Keep Alive)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保持活跃 (Keep Alive)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إبقاء نشطاً (Keep Alive)"
           }
         }
       }
@@ -1409,6 +2393,18 @@
             "state": "translated",
             "value": "Keep Alive giữ cho app tiếp tục chạy ngầm khi bị thu nhỏ (chưa đóng hẳn ở đa nhiệm)."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Alive 会在应用最小化（未从后台关闭）时保持其在后台运行。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يحافظ Keep Alive على تشغيل التطبيق في الخلفية عند تصغيره (لم يتم إغلاقه من مبدل التطبيقات)."
+          }
         }
       }
     },
@@ -1425,6 +2421,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Đọc/Ghi Kernel"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "内核读写"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قراءة وكتابة النواة (Kernel)"
           }
         }
       }
@@ -1443,6 +2451,18 @@
             "state": "translated",
             "value": "Cài đặt Lara"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lara 设置"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إعدادات Lara"
+          }
         }
       }
     },
@@ -1459,6 +2479,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Lara không hoạt động khi đang đính kèm trình gỡ lỗi (debugger)."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "附加调试器时 Lara 无法工作。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lara لا تعمل عند إرفاق مصحح أخطاء."
           }
         }
       }
@@ -1477,6 +2509,18 @@
             "state": "translated",
             "value": "Đang tải..."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "加载中..."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جاري التحميل..."
+          }
         }
       }
     },
@@ -1493,6 +2537,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tạo ra darksword-kexploit-fun."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "制作了 darksword-kexploit-fun。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صنع darksword-kexploit-fun."
           }
         }
       }
@@ -1511,6 +2567,18 @@
             "state": "translated",
             "value": "Tạo ra script respring."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "制作了注销 (respring) 脚本。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صنع نص respring."
+          }
         }
       }
     },
@@ -1527,6 +2595,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Nhà phát triển chính"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "主要开发者"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المطور الرئيسي"
           }
         }
       }
@@ -1545,6 +2625,18 @@
             "state": "translated",
             "value": "Tạo repo bằng cách fork [template repo](https://github.com/rooootdev/larafonts/) trên GitHub và thêm font tùy chỉnh của bạn vào đó."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通过在 GitHub 上复刻 [模板仓库](https://github.com/rooootdev/larafonts/) 并添加您的自定义字体来创建一个仓库。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قم بإنشاء مستودع عن طريق عمل Fork لـ [المستودع القالب](https://github.com/rooootdev/larafonts/) على GitHub وإضافة خطوطك المخصصة هناك."
+          }
         }
       }
     },
@@ -1561,6 +2653,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Lưu offset thủ công sau khi sửa các giá trị như t1sz_boot"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在修改 t1sz_boot 等值后手动保存偏移量"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "احفظ الإزاحات (Offsets) يدويًا بعد تعديل القيم مثل t1sz_boot"
           }
         }
       }
@@ -1579,6 +2683,18 @@
             "state": "translated",
             "value": "Khớp"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "匹配"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يتطابق"
+          }
         }
       }
     },
@@ -1595,6 +2711,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Băng thông Bộ nhớ"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "内存带宽"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عرض النطاق الترددي للذاكرة"
           }
         }
       }
@@ -1613,6 +2741,18 @@
             "state": "translated",
             "value": "Metal HUD cho mọi ứng dụng"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "为所有应用开启 Metal HUD"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Metal HUD لجميع التطبيقات"
+          }
         }
       }
     },
@@ -1629,6 +2769,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Phương thức"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "方法"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الطريقة"
           }
         }
       }
@@ -1647,6 +2799,18 @@
             "state": "translated",
             "value": "Cần được áp dụng lại mỗi khi bạn sideload một app mới."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "每次侧载新应用时都需要重新应用。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يجب إعادة التطبيق في كل مرة تقوم فيها بتثبيت تطبيق جديد (Sideload)."
+          }
         }
       }
     },
@@ -1663,6 +2827,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Không có Token nào được lưu."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "没有已保存的令牌。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا يوجد رمز محفوظ."
           }
         }
       }
@@ -1681,6 +2857,18 @@
             "state": "translated",
             "value": "Không tìm thấy tàn dư trong danh sách đen từ VarCleanRules.json."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未找到来自 VarCleanRules.json 的黑名单残留。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم يتم العثور على أي بقايا مدرجة في القائمة السوداء من VarCleanRules.json."
+          }
         }
       }
     },
@@ -1697,6 +2885,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Không tìm thấy thẻ nào."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未找到卡片。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم يتم العثور على بطاقات."
           }
         }
       }
@@ -1715,6 +2915,18 @@
             "state": "translated",
             "value": "Chưa thêm repo nào."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "尚未添加仓库。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم تتم إضافة أي مستودعات حتى الآن."
+          }
         }
       }
     },
@@ -1731,6 +2943,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Không khả dụng khi đang đính kèm trình gỡ lỗi."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "附加调试器时不可用。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "غير متوفر عند إرفاق مصحح أخطاء."
           }
         }
       }
@@ -1749,6 +2973,18 @@
             "state": "translated",
             "value": "Không khả dụng khi đang đính kèm trình gỡ lỗi."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "附加调试器时不可用。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "غير متوفر أثناء إرفاق مصحح الأخطاء."
+          }
         }
       }
     },
@@ -1765,6 +3001,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Lưu ý: Một số tweak có thể không hoạt động hoặc gây thiếu ổn định.\\nCẢNH BÁO: Không bao giờ bật tính năng mà máy của bạn không hỗ trợ."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "注意：某些插件可能无法工作或导致不稳定。\\n警告：切勿启用您的设备不支持的功能。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ملاحظة: قد لا تعمل بعض التعديلات أو تسبب عدم استقرار.\\nتحذير: لا تقم أبدًا بتمكين الميزات التي لا يدعمها جهازك."
           }
         }
       }
@@ -1783,6 +3031,18 @@
             "state": "translated",
             "value": "Tắt"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关闭"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إيقاف"
+          }
         }
       }
     },
@@ -1799,6 +3059,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Mở Cài đặt"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开设置"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "افتح الإعدادات"
           }
         }
       }
@@ -1817,6 +3089,18 @@
             "state": "translated",
             "value": "Khác"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "其他"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أخرى"
+          }
         }
       }
     },
@@ -1833,6 +3117,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ghi đè các tệp danh sách đen của MobileIdentityData bằng một plist rỗng."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用空 plist 覆盖 MobileIdentityData 黑名单文件。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يستبدل ملفات القائمة السوداء لـ MobileIdentityData بـ plist فارغ."
           }
         }
       }
@@ -1851,6 +3147,18 @@
             "state": "translated",
             "value": "Hiệu ứng Hạt"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "粒子效果"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الجسيمات"
+          }
         }
       }
     },
@@ -1867,6 +3175,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Patch (Plist Rỗng)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "补丁 (空 Plist)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تصحيح (Plist فارغ)"
           }
         }
       }
@@ -1885,6 +3205,18 @@
             "state": "translated",
             "value": "Đường dẫn:"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "路径："
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المسار:"
+          }
         }
       }
     },
@@ -1901,6 +3233,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Đặt các file PNG với tên bundleid.png vào thư mục /var/mobile/darkboard"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "将 PNG 文件命名为 bundleid.png 并放入 /var/mobile/darkboard"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ضع ملفات PNG باسم bundleid.png في /var/mobile/darkboard"
           }
         }
       }
@@ -1919,6 +3263,18 @@
             "state": "translated",
             "value": "Nguồn"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "电源"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الطاقة"
+          }
         }
       }
     },
@@ -1935,6 +3291,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tiến trình"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "进程"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العملية"
           }
         }
       }
@@ -1953,6 +3321,18 @@
             "state": "translated",
             "value": "Đã chạy Exploit"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已运行漏洞利用"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم تشغيل الاستغلال"
+          }
         }
       }
     },
@@ -1969,6 +3349,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Làm mới"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "刷新"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحديث"
           }
         }
       }
@@ -1987,6 +3379,18 @@
             "state": "translated",
             "value": "Làm mới Apps"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "刷新应用"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحديث التطبيقات"
+          }
         }
       }
     },
@@ -2003,6 +3407,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Xóa bỏ"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "移除"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إزالة"
           }
         }
       }
@@ -2021,6 +3437,18 @@
             "state": "translated",
             "value": "Chịu trách nhiệm cho hầu hết các vấn đề về remotecall."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "负责大部分与 remotecall 相关的功能。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مسؤول عن معظم الأشياء المتعلقة بـ remotecall."
+          }
         }
       }
     },
@@ -2037,6 +3465,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Khôi phục"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "恢复"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استعادة"
           }
         }
       }
@@ -2055,6 +3495,18 @@
             "state": "translated",
             "value": "Khôi phục Bản gốc"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "恢复原始"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استعادة الأصلي"
+          }
         }
       }
     },
@@ -2071,6 +3523,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Chạy Exploit"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "运行漏洞利用"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تشغيل الاستغلال"
           }
         }
       }
@@ -2089,6 +3553,18 @@
             "state": "translated",
             "value": "Đang chạy..."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "运行中..."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جاري التشغيل..."
+          }
         }
       }
     },
@@ -2105,6 +3581,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Chỉ dành cho SBX."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仅限 SBX。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SBX فقط."
           }
         }
       }
@@ -2123,6 +3611,18 @@
             "state": "translated",
             "value": "Thoát Sandbox Thất bại"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "沙盒逃逸失败"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فشل الهروب من Sandbox"
+          }
         }
       }
     },
@@ -2139,6 +3639,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Đã thoát Sandbox"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已逃逸沙盒"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم الهروب من Sandbox"
           }
         }
       }
@@ -2157,6 +3669,18 @@
             "state": "translated",
             "value": "Lưu"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حفظ"
+          }
         }
       }
     },
@@ -2173,6 +3697,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Lưu Offsets"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存偏移量"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حفظ الإزاحات"
           }
         }
       }
@@ -2191,6 +3727,18 @@
             "state": "translated",
             "value": "Đang quét..."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "扫描中..."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جاري الفحص..."
+          }
         }
       }
     },
@@ -2207,6 +3755,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Thiết bị Nghiên cứu Bảo mật"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "安全研究设备"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جهاز أبحاث الأمان"
           }
         }
       }
@@ -2225,6 +3785,18 @@
             "state": "translated",
             "value": "Chọn…"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择…"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حدد…"
+          }
         }
       }
     },
@@ -2241,6 +3813,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Cài đặt"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设置"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الإعدادات"
           }
         }
       }
@@ -2259,6 +3843,18 @@
             "state": "translated",
             "value": "Thiết lập"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设置"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إعداد"
+          }
         }
       }
     },
@@ -2275,6 +3871,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Hiện Trình quản lý Tệp dạng Tab"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在标签页中显示文件管理器"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إظهار مدير الملفات في علامات التبويب"
           }
         }
       }
@@ -2293,6 +3901,18 @@
             "state": "translated",
             "value": "Các ứng dụng đã Sideload"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "侧载应用"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التطبيقات المثبتة خارجيًا (Sideloaded)"
+          }
         }
       }
     },
@@ -2309,6 +3929,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Nguồn"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "源"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المصدر"
           }
         }
       }
@@ -2327,6 +3959,18 @@
             "state": "translated",
             "value": "Stage Manager (Chỉ iPad?)"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "台前调度 (仅限 iPad？)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "منظم الواجهة (iPad فقط؟)"
+          }
         }
       }
     },
@@ -2343,6 +3987,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Lưu trữ Stash cho KRW primitives"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隐藏 KRW 原语"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إخفاء أساسيات KRW"
           }
         }
       }
@@ -2361,6 +4017,18 @@
             "state": "translated",
             "value": "Trạng thái"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "状态"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الحالة"
+          }
         }
       }
     },
@@ -2377,6 +4045,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Định dạng Giờ Thanh Trạng thái"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "状态栏时间格式"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تنسيق وقت شريط الحالة"
           }
         }
       }
@@ -2395,6 +4075,18 @@
             "state": "translated",
             "value": "Toàn bộ EditorView."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "整个 EditorView。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EditorView بالكامل."
+          }
         }
       }
     },
@@ -2411,6 +4103,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Hành động này sẽ xóa file kernelcache đã tải và dọn sạch các offset đã lưu."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "这将删除已下载的 kernelcache 并移除已保存的偏移量。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سيؤدي هذا إلى حذف kernelcache الذي تم تنزيله وإزالة الإزاحات المحفوظة."
           }
         }
       }
@@ -2429,6 +4133,18 @@
             "state": "translated",
             "value": "Bật/Tắt ASLR"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "切换 ASLR"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تبديل ASLR"
+          }
         }
       }
     },
@@ -2445,6 +4161,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Các Tweak"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "插件"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعديلات (Tweaks)"
           }
         }
       }
@@ -2463,6 +4191,18 @@
             "state": "translated",
             "value": "Tự chịu rủi ro khi sử dụng."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "风险自负。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استخدمه على مسؤوليتك الخاصة."
+          }
         }
       }
     },
@@ -2479,6 +4219,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sử dụng SBX trước và dự phòng VFS để ghi đè.\\nLấy hình ảnh thẻ [tại đây](https://dynalist.io/d/ldKY6rbMR3LPnWz4fTvf_HCh)."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "首先使用 SBX，然后回退到 VFS 进行覆盖。\\n在 [此处](https://dynalist.io/d/ldKY6rbMR3LPnWz4fTvf_HCh) 获取卡片图像。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يستخدم SBX أولاً ويتراجع إلى VFS للكتابة الفوقية.\\nاحصل على صور البطاقة [هنا](https://dynalist.io/d/ldKY6rbMR3LPnWz4fTvf_HCh)."
           }
         }
       }
@@ -2497,6 +4249,18 @@
             "state": "translated",
             "value": "Dùng helper respring của lara."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用 lara 的注销 (respring) 助手。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يستخدم مساعد respring الخاص بـ lara."
+          }
         }
       }
     },
@@ -2513,6 +4277,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Khởi tạo VFS Thất bại"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VFS 初始化失败"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فشل تهيئة VFS"
           }
         }
       }
@@ -2531,6 +4307,18 @@
             "state": "translated",
             "value": "Chỉ hỗ trợ VFS."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仅限 VFS。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VFS فقط."
+          }
         }
       }
     },
@@ -2547,6 +4335,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Đang xử lý..."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在工作..."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يعمل..."
           }
         }
       }
@@ -2565,6 +4365,18 @@
             "state": "translated",
             "value": "Thiết bị/Cách cài đặt của bạn có thể không được hỗ trợ."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "您的设备/安装方法可能不受支持。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قد لا يكون جهازك/طريقة التثبيت مدعومة."
+          }
         }
       }
     },
@@ -2581,6 +4393,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "thực hiện ngay"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "立即执行"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "افعلها الآن"
           }
         }
       }
@@ -2599,6 +4423,18 @@
             "state": "translated",
             "value": "không hợp lệ."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无效。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "غير صالح."
+          }
         }
       }
     },
@@ -2615,6 +4451,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "hợp lệ!"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有效！"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صالح!"
           }
         }
       }
@@ -2633,6 +4481,18 @@
             "state": "translated",
             "value": "Address Space Layout Randomization.\\nCó lẽ không cần thiết cho bạn."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "地址空间布局随机化 (ASLR)。\\n可能对您没有用处。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عشوائية تخطيط مساحة العنوان (ASLR).\\nربما لا يكون مفيدًا لك."
+          }
         }
       }
     },
@@ -2649,6 +4509,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Cảm ơn lớn đến [jailbreak.party](https://github.com/jailbreakdotparty/dirtyZero)!\\nLƯU Ý: Nhiều Tweak hiện không hoạt động.\\nVấn đề này có thể sẽ được khắc phục trong bản cập nhật tới."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "非常感谢 [jailbreak.party](https://github.com/jailbreakdotparty/dirtyZero)！\\n注意：许多插件目前无法工作。\\n这可能会在未来的更新中修复。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "شكر كبير لـ [jailbreak.party](https://github.com/jailbreakdotparty/dirtyZero)!\\nملاحظة: الكثير من التعديلات لا تعمل حاليًا.\\nمن المحتمل أن يتم إصلاح هذا في تحديث مستقبلي."
           }
         }
       }
@@ -2667,6 +4539,18 @@
             "state": "translated",
             "value": "Ghi đè Font chỉ khả dụng ở chế độ VFS hoặc Hybrid.\\n(Cài đặt -> Phương thức -> VFS/Hybrid)"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "字体覆盖仅在 VFS 或混合模式下可用。\\n(设置 -> 方法 -> VFS/Hybrid)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استبدال الخطوط متاح فقط في وضع VFS أو الوضع الهجين.\\n(الإعدادات -> الطريقة -> VFS/Hybrid)"
+          }
         }
       }
     },
@@ -2683,6 +4567,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Đã giúp tôi về offset và nhiều thứ khác.\\nDự án này không thể hoàn thành nếu thiếu anh ấy!"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "帮助我处理了偏移量和许多其他事情。\\n如果没有他，这个项目是不可能完成的！"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ساعدني في الإزاحات والكثير من الأشياء الأخرى.\\nلم يكن هذا المشروع ممكنًا بدونه!"
           }
         }
       }
@@ -2701,6 +4597,18 @@
             "state": "translated",
             "value": "Hybrid: SBX để đọc, VFS để ghi.\\nPhương thức tốt nhất.\\n(Cảm ơn Huy)"
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "混合模式：SBX 读取，VFS 写入。\\n有史以来最好的方法。\\n(感谢 Huy)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الوضع الهجين: SBX للقراءة، و VFS للكتابة.\\nأفضل طريقة على الإطلاق.\\n(شكرًا Huy)"
+          }
         }
       }
     },
@@ -2717,6 +4625,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Quyền R/W Kernel chưa sẵn sàng.\\nHãy chạy exploit trước."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "内核读写尚未准备好。\\n请先运行漏洞利用。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قراءة/كتابة النواة غير جاهزة.\\nقم بتشغيل الاستغلال أولاً."
           }
         }
       }
@@ -2735,6 +4655,18 @@
             "state": "translated",
             "value": "Thiếu offset Kernelcache.\\nVui lòng tải xuống trong mục Cài đặt."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "缺少 Kernelcache 偏移量。\\n请在设置中下载它们。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إزاحات Kernelcache مفقودة.\\nقم بتنزيلها في الإعدادات."
+          }
         }
       }
     },
@@ -2751,6 +4683,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "RemoteCall chưa được khởi tạo.\\nBạn vào đây bằng cách nào vậy?"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RemoteCall 未初始化。\\n你怎么会在这里？"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم يتم تهيئة RemoteCall.\\nكيف وصلت إلى هنا؟"
           }
         }
       }
@@ -2769,6 +4713,18 @@
             "state": "translated",
             "value": "Chưa thoát Sandbox.\\nVui lòng chạy tính năng thoát sandbox trước."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "沙盒逃逸尚未准备好。\\n请先运行沙盒逃逸。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الهروب من Sandbox غير جاهز.\\nقم بتشغيل الهروب من Sandbox أولاً."
+          }
         }
       }
     },
@@ -2785,6 +4741,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Một số font tùy chỉnh sẽ không hoạt động với icon ứng dụng và các mục khác, một số sẽ không hoạt động.\\nĐể chúng hoạt động, hãy vá tệp .ttf của bạn [tại đây](https://neonmodder123.github.io/lara-font-patcher/)."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "某些自定义字体将无法用于应用图标和其他内容，某些甚至根本无法工作。\\n如果您希望它们正常工作，请在 [此处](https://neonmodder123.github.io/lara-font-patcher/) 修复您的 .ttf 文件。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بعض الخطوط المخصصة لن تعمل مع أيقونات التطبيقات وأشياء أخرى، وبعضها لن يعمل على الإطلاق.\\nإذا كنت تريدها أن تعمل، فقم بتصحيح ملف .ttf الخاص بك [هنا](https://neonmodder123.github.io/lara-font-patcher/)."
           }
         }
       }
@@ -2803,6 +4771,18 @@
             "state": "translated",
             "value": "Những lệnh này tương tác với SpringBoard qua RemoteCall.\\nNhớ giữ RemoteCall hoạt động khi chạy chúng."
           }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "这些操作会通过 RemoteCall 调用 SpringBoard。\\n在运行它们时请保持 RemoteCall 处于初始化状态。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "هذه تستدعي SpringBoard عبر RemoteCall.\\nاحتفظ بـ RemoteCall مهيأ أثناء تشغيلها."
+          }
         }
       }
     },
@@ -2819,6 +4799,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Hành động này sẽ ghi đè file đích bằng nội dung của file nguồn đã chọn.\\nKích thước file đích phải >= kích thước file nguồn."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "这将使用所选源文件的内容覆盖目标文件。\\n目标大小必须 >= 源大小。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سيؤدي هذا إلى استبدال الملف الهدف بمحتويات الملف المصدر المحدد.\\nيجب أن يكون الحجم الهدف >= الحجم المصدر."
           }
         }
       }
