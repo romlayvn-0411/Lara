@@ -242,11 +242,12 @@ struct AppsView: View {
                                 Image(uiImage: icon)
                                     .resizable()
                                     .frame(width: 40, height: 40)
-                                    .clipShape(RoundedRectangle(cornerRadius: 6))
+                                    .clipShape(RoundedRectangle(cornerRadius: 9))
                             } else {
                                 Image("unknown")
                                     .resizable()
                                     .frame(width: 40, height: 40)
+                                    .clipShape(RoundedRectangle(cornerRadius: 9))
                             }
 
                             VStack(alignment: .leading) {

@@ -14,7 +14,7 @@ import QuickLook
 
 struct SantanderView: View {
     let startPath: String
-    @State private var selectedmethod: method = .sbx
+    @State private var selectedmethod: method = .hybrid
     @ObservedObject private var mgr = laramgr.shared
 
     init(startPath: String = "/") {

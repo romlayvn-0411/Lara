@@ -66,13 +66,13 @@ struct JitView: View {
                                 if let icon = proc.icon {
                                     Image(uiImage: icon)
                                         .resizable()
-                                        .frame(width: 32, height: 32)
-                                        .cornerRadius(6)
+                                        .frame(width: 40, height: 40)
+                                        .clipShape(RoundedRectangle(cornerRadius: 9))
                                 } else {
                                     Image("unknown")
                                         .resizable()
-                                        .frame(width: 32, height: 32)
-                                        .cornerRadius(6)
+                                        .frame(width: 40, height: 40)
+                                        .clipShape(RoundedRectangle(cornerRadius: 9))
                                 }
 
                                 VStack(alignment: .leading) {
