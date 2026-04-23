@@ -86,7 +86,7 @@ struct lara: App {
             }
             .onChange(of: scenePhase) { phase in
                 if phase == .inactive || phase == .background {
-                    if mgr.rcrunning {
+                    if mgr.rcready {
                         var bgTask: UIBackgroundTaskIdentifier = .invalid
                         bgTask = UIApplication.shared.beginBackgroundTask(withName: "RemoteCallCleanup") {
                             if bgTask != .invalid {
