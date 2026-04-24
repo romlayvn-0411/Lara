@@ -333,8 +333,10 @@ struct ContentView: View {
                                             EditorView()
                                         }
 
-                                        NavigationLink("Liquid Glass") {
-                                            LGView()
+                                        if os.majorVersion >= 26 {
+                                            NavigationLink("Liquid Glass") {
+                                                LGView()
+                                            }
                                         }
 
                                         NavigationLink("3 App Bypass") {
