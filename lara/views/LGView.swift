@@ -16,7 +16,7 @@ struct LGView: View {
     @State private var alert: String?
     @State private var valid: Bool = true
     
-    private let path = "/var/Managed Preferences/.GlobalPreferences.plist"
+    private let path = "/var/Managed Preferences/mobile/.GlobalPreferences.plist"
     private let oggpurl: URL
 
     init() {
