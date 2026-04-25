@@ -395,11 +395,11 @@ final class SantanderPathListViewController: UITableViewController, UISearchResu
                 "/var/containers/Bundle/Application"
             ]
             var bundleIDNameCache: [String:String] = [:]
-            if mode == .appName {
+            if mode == .appName && dataAppPaths.contains(path.path) {
                 let bundlePath = "/private/var/containers/Bundle/Application"
                 let apps = try fm.contentsOfDirectory(atPath: bundlePath)
                 var results: [String:String] = [:]
-                for app in apps {
+                for app in apps {/var
                     let appPath = bundlePath + "/" + app
                     let contents = try fm.contentsOfDirectory(atPath: appPath)
                     for item in contents {
