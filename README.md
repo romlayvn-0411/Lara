@@ -33,7 +33,7 @@
 </p>
 
 > [!WARNING]
-> Due to my laptop breaking, lara development is halted until i get a replacement screen or laptop. I thank everyone who has helped tje project so far and hope to be back one day.
+> Due to my laptop breaking, lara development is halted until i get a replacement screen or laptop. I thank everyone who has helped the project so far and hope to be back one day.
 
 ---
 
@@ -41,7 +41,7 @@
 
 lara will at its absolute best only ever support versions up to iOS 26.0.1/iOS 18.7.1. the exploit was patched after those versions.
 
-currently tested on iOS 17.1 - 26.0.1, up to iOS 18.7.1 only on the 18.7 series.
+currently tested on iOS 17.1 - 26.0.1, up to iOS 18.7.1.
 
 ## compatibility
 
@@ -84,8 +84,8 @@ If lara doesnt work on your device, and you want to help the project, please als
 - Upside Down
 - Floating Dock (Broken)
 - Grid App Switcher
-- Performance
-- JIT
+- Performance HUD
+- JIT Enabler (only for apps with `get-task-allow`)
 
 ### coming soon
 
