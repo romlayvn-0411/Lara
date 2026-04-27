@@ -473,7 +473,7 @@ final class laramgr: ObservableObject {
                     let fileName = "Nugget" + bundleID.replacingOccurrences(of: "com.apple.", with: "") + "Hash"
                     let content = hashes[bundleID]!
                     let filePath = dataFolder + "/" + PPHash + "/Documents/" + fileName
-                    try content.write(to: URL(string: filePath), atomically: true, encoding: .utf8)
+                    try content.write(to: URL(fileURLWithPath: filePath), atomically: true, encoding: .utf8)
                     logmsg("Wrote hash \(content) to \(filePath)")
                 }
                 return true
