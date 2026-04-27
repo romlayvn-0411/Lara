@@ -445,6 +445,41 @@ final class laramgr: ObservableObject {
             }
         }
     }
+
+    // inspired by nugget from leminlimez
+    func PPHelper() {
+        let fm = FileManager.default
+        let dataFolder = "/private/var/mobile/Containers/Data/Application"
+        var bundleIDs = ["com.leemin.Pocket-Poster", "com.apple.PosterBoard"]
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            bundleIDs.append("com.apple.CarPlayWallpaper")
+        }
+        let apps = fm.contentsOfDirectory(atPath: dataFolder)
+        var hashes: [String:String] = [:]
+        for app in apps {
+            if let plist = NSDictionary(contentsOf: URL(fileURLWithPath: dataFolder + "/" + app + "/.com.apple.mobile_container_manager.metadata.plist")),
+                let bundleID = plist["MCMMetadataIdentifier"] as? String {
+                if bundleIDs.contains(bundleID) {
+                    hashes[bundleID] = app
+                }
+            }
+        }
+        if let PPHash = hashes["com.leemin.Pocket-Poster"] {
+            hashes["com.leemin.Pocket-Poster"] = nil
+            for bundleID in hashes.keys {
+                let fileName = "Nugget" + key.replace("com.apple.", "") + "Hash"
+                let content = hashes[bundleID]!
+                let filePath = dataFolder + "/" + PPHash + "/Documents/" + fileName
+                let fileURL = URL(string: path)
+                content.write(to: fileURL, atomically: true, encoding: .utf8)
+                logmsg("Wrote hash \(content) to \(filePath)")
+            }
+        } else {
+            logmsg("Please install Pocket Poster before using Pocket Poster Helper")
+            return false
+        }
+
+    }
     
     @discardableResult
     func apfsown(path: String, uid: UInt32, gid: UInt32) -> Bool {

@@ -140,6 +140,19 @@ struct ToolsView: View {
             } footer: {
                 Text("Currently broken.")
             }
+
+            Section {
+                Button {
+                    mgr.PPHelper()
+                } label: {
+                    Text("Pocket Poster Helper")
+                }
+                .disabled(!mgr.sbxready)
+            } header: {
+                Text("Pocket Poster")
+            } footer: {
+                Text("Get the needed hashes for Pocket Poster without the need of a PC.")
+            }
             
             Section {
                 HStack {
