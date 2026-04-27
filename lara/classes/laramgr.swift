@@ -464,7 +464,7 @@ final class laramgr: ObservableObject {
             if UIDevice.current.userInterfaceIdiom == .phone {
                 bundleIDs.append("com.apple.CarPlayWallpaper")
             }
-            guard let appList = getAppList() as [String:AppInfo] else { return false}
+            guard let appList = getAppList() else { return false}
             var hashes: [String:String] = [:]
             for bundleID in bundleIDs {
                 if let appInfo = appList[bundleID] {
@@ -524,8 +524,12 @@ final class laramgr: ObservableObject {
                 for item in contents {
                     if item.hasSuffix(".app") {
                         if let plist = NSDictionary(contentsOf: URL(fileURLWithPath: appPath + "/" + item + "/Info.plist")),
-                            let bundleID = plist["CFBundleIdentifier"] as? String,
-                            let appInfo = AppInfo(executable: plist["CFBundleExecutable"] as? String ?? "", displayName: plist["CFBundleDisplayName"] as? String ?? "", bundleName: plist["CFBundleName"] as? String ?? "", dataFolder: appList[bundleID]?.dataFolder ?? "", bundleFolder: app) {
+                            let bundleID = plist["CFBundleIdentifier"] as? String {
+                            let executable = plist["CFBundleExecutable"] as? String ?? ""
+                            let displayName = plist["CFBundleDisplayName"] as? String ?? ""
+                            let bundleName = plist["CFBundleName"] as? String ?? ""
+                            let dataFolderID = appList[bundleID]?.dataFolder ?? ""
+                            let appInfo = AppInfo(executable: executable, displayName: displayName, bundleName: bundleName, dataFolder: dataFolderID, bundleFolder: app)
                             appList[bundleID] = appInfo
                         }
                         break
