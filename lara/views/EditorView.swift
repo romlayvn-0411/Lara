@@ -18,28 +18,12 @@ struct EditorView: View {
     @State private var valid: Bool = true
     @AppStorage("ogSubType") private var ogSubType: Int = -1
     @State private var selectedSubType: Int = -1
-
-    enum SubType: Int, CaseIterable, Identifiable {
-        case iPhone14Pro = 2556
-        case iPhone14ProMax = 2796
-        case iPhone16Pro = 2622
-        case iPhone16ProMax = 2868
-        // X gestures for SE?
-
-        var id: Int { self.rawValue }
-        var displayName: String {
-            switch self {
-            case .iPhone14Pro: return "14 Pro (2556)"
-            case .iPhone14ProMax: return "14 Pro Max (2796)"
-            case .iPhone16Pro: return "iOS 18+:\n16 Pro (2622)"
-            case .iPhone16ProMax: return "iOS 18+:\n16 Pro Max (2868)"
-            }
-        }
-    }
     
     private let path = "/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches/com.apple.MobileGestalt.plist"
     private let ogmgurl: URL
     let os = ProcessInfo().operatingSystemVersion
+    var subtypes = [2556: "14 Pro (2556)", 2796: "14 Pro Max (2796)", 2976: "15 Pro Max (2976)", 2622: "16 Pro (2622)", 2868: "16 Pro Max (2868)", 2436: "X Gestures (2436)"]
+    let subtypeDisabled: [Int: Bool]
 
     init() {
         let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
@@ -69,26 +53,22 @@ struct EditorView: View {
         if ogSubType == -1 {
             ogSubType = subType
         }
-
+        subtypes[ogSubType] = nil
+        subtypeDisabled = [2556: requiresVersion(16), 2796: requiresVersion(16), 2976: requiresVersion(17), 2622: requiresVersion(18), 2868: requiresVersion(18), 2436: !UIDevice._hasHomeButton()]
     }
 
     var body: some View {
         NavigationStack {
             List {
                 Section {
-                    HStack {
-                        Text("Dynamic Island")
-                        
-                        Spacer()
-                        
-                        Picker("", selection: $selectedSubType) {
-                            Text("Original (\(String(ogSubType)))").tag(ogSubType)
-                            ForEach(SubType.allCases.filter { $0.rawValue != ogSubType }) { subtype in
-                                Text(subtype.displayName).tag(subtype.rawValue)
-                            }
+                    Picker("Dynamic Island", selection: $selectedSubType) {
+                        Text("Original (\(String(ogSubType)))").tag(ogSubType)
+                        ForEach(subtypes.keys, id: \.self) { subtype in
+                            Text(subtypes[subtype]).tag(subtype)
+                                .disabled(subtypeDisbled[subtype])
                         }
-                        .pickerStyle(.menu)
                     }
+                    .pickerStyle(.menu)
                     Toggle("Action Button", isOn: mgkeybinding(["cT44WE1EohiwRzhsZ8xEsw"]))
                         .disabled(requiresVersion(17))
                     Toggle("Allow installing iPadOS apps", isOn: mgkeybinding(["9MZ5AdH43csAUajl/dU+IQ"], type: [Int].self, default: [1], enable: [1, 2]))
