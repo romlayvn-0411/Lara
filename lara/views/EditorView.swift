@@ -72,7 +72,7 @@ struct EditorView: View {
                                     .disabled(subtypeDisabled[subtype] ?? true)
                             }
                         } label: {
-                            Text(selectedSubType == ogSubType ? "Original (\(String(selectedSubType)))" :  String((subtypes[selectedSubType]) ?? "??"))
+                            Text(selectedSubType == ogSubType ? "Original (\(String(selectedSubType)))" :  (subtypeNames[selectedSubType] ?? "??"))
                         }
                     }
                     Toggle("Action Button", isOn: mgkeybinding(["cT44WE1EohiwRzhsZ8xEsw"]))
