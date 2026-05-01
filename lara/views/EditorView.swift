@@ -23,7 +23,7 @@ struct EditorView: View {
     private let ogmgurl: URL
     let os = ProcessInfo().operatingSystemVersion
     var subtypes = [2556: "14 Pro (2556)", 2796: "14 Pro Max (2796)", 2976: "15 Pro Max (2976)", 2622: "16 Pro (2622)", 2868: "16 Pro Max (2868)", 2436: "X Gestures (2436)"]
-    var subtypeDisabled: [Int: Bool]: [:]
+    var subtypeDisabled: [Int: Bool] = [:]
 
     init() {
         let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
