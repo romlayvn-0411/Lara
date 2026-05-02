@@ -128,4 +128,4 @@ if things get weird later, **Delete Kernelcache Data** in Settings wipes the cac
 - Everyone who contributed! (Visible <a href="https://github.com/rooootdev/lara/graphs/contributors">Here</a>)
 
 <br> 
-<div align="center">a beautiful kexploit ♥️</div>
+<div align="center">a beautiful kexploit ❤️</div>
