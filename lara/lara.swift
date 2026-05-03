@@ -22,6 +22,7 @@ struct lara: App {
     @Environment(\.scenePhase) private var scenePhase
     @State var showunsupported: Bool = false
     @State private var selectedtab: Int = 1
+    @State private var hasoffsets: Bool = false
     private let keepalivekey = "keepalive"
     @AppStorage("showfmintabs") private var showfmintabs: Bool = true
     @AppStorage("selectedmethod") private var selectedmethod: method = .hybrid
@@ -64,7 +65,7 @@ struct lara: App {
                     }
                     .tag(0)
                 
-                ContentView()
+                ContentView(hasoffsets: $hasoffsets)
                     .tabItem {
                         Image(systemName: "ant.fill")
                     }
@@ -80,6 +81,8 @@ struct lara: App {
                 if g_isunsupported {
                     showunsupported = true
                 }
+                
+                hasoffsets = verifykernoffsets()
                 
                 init_offsets()
                 offsets_init()

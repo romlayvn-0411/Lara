@@ -8,21 +8,21 @@
 import SwiftUI
 import Darwin
 
+struct scannedapp: Identifiable, Hashable {
+    let id: String
+    let name: String
+    let bundleid: String
+    let bundlepath: String
+    let hasmobileprov: Bool
+    let notbypassed: Bool
+}
+
 struct AppsView: View {
     @ObservedObject var mgr: laramgr
     @AppStorage("selectedmethod") private var selectedmethod: method = .vfs
     
     @State private var scannedapps: [scannedapp] = []
     @State private var iconcache: [String: UIImage] = [:]
-
-    struct scannedapp: Identifiable, Hashable {
-        let id: String
-        let name: String
-        let bundleid: String
-        let bundlepath: String
-        let hasmobileprov: Bool
-        let notbypassed: Bool
-    }
     
     private func isbypassed(bundlepath: String) -> Bool {
         let key = "com.apple.installd.validatedByFreeProfile"

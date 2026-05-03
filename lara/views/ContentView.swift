@@ -11,7 +11,7 @@ import UniformTypeIdentifiers
 struct ContentView: View {
     @AppStorage("showfmintabs") private var showfmintabs: Bool = true
     @ObservedObject private var mgr = laramgr.shared
-    @State private var hasoffsets = true
+    @Binding var hasoffsets: Bool
     @State private var showsettings = false
     @State private var selectedmethod: method = .hybrid
 

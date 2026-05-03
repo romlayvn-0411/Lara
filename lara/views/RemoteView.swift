@@ -23,6 +23,8 @@ struct RemoteView: View {
     @State private var customLastResult: String = ""
     @State private var hsRows: Int = 6
     @State private var hsColumns: Int = 4
+    @State private var freakyrunning: Bool = false
+    @State private var freakyseq: Int = 0
 
     private var dockMaxColumns: Int { rcdockunlimited ? 50 : 10 }
 
@@ -156,6 +158,14 @@ struct RemoteView: View {
                 } label: {
                     Text("Enable UIKit Debug Overlay")
                 }
+
+                /*
+                Button {
+                    togglefreakydog()
+                } label: {
+                    Text(freakyrunning ? "Stop Freaky Dog Overlay" : "Start Freaky Dog Overlay")
+                }
+                */
             } footer: {
                 Text("To use UIKit Debug Overlay, double tap the status bar.")
             }
@@ -495,6 +505,11 @@ struct RemoteView: View {
             }
         }
         .navigationTitle(Text("Tweaks"))
+        .onDisappear {
+            if freakyrunning, let proc = mgr.sbProc {
+                stopfreakydog(proc)
+            }
+        }
     }
 
     private func run(_ name: String, _ work: @escaping () -> String, onComplete: ((String) -> Void)? = nil) {
@@ -510,6 +525,62 @@ struct RemoteView: View {
                 self.running = false
             }
         }
+    }
+
+    private func togglefreakydog() {
+        guard mgr.rcready, let proc = mgr.sbProc else { return }
+
+        if freakyrunning {
+            stopfreakydog(proc)
+            return
+        }
+
+        let view = enable_freaky_dog_overlay(proc)
+        guard view != 0 else {
+            mgr.logmsg("(rc) enable_freaky_dog_overlay() failed")
+            return
+        }
+
+        let seq = freakyseq + 1
+        freakyseq = seq
+        freakyrunning = true
+        mgr.logmsg("(rc) enable_freaky_dog_overlay() -> 0x\(String(view, radix: 16))")
+
+        let screen = UIScreen.main.bounds
+        let maxw = max(Int(screen.width), 200)
+        let maxh = max(Int(screen.height), 300)
+
+        DispatchQueue.global(qos: .userInitiated).async {
+            while true {
+                let shouldcontinue = DispatchQueue.main.sync { () -> Bool in
+                    self.freakyrunning && self.freakyseq == seq && self.mgr.rcready && self.mgr.sbProc != nil
+                }
+                if !shouldcontinue {
+                    break
+                }
+
+                let size = Int.random(in: 110...220)
+                let x = Int.random(in: 0...max(maxw - size, 0))
+                let y = Int.random(in: 40...max(maxh - size, 40))
+                let result = move_freaky_dog_overlay(proc, view, Int32(x), Int32(y), Int32(size), Int32(size))
+                if result != 0 {
+                    DispatchQueue.main.async {
+                        self.mgr.logmsg("(rc) move_freaky_dog_overlay() failed: \(result)")
+                        self.stopfreakydog(proc)
+                    }
+                    break
+                }
+
+                usleep(UInt32.random(in: 25000...90000))
+            }
+        }
+    }
+
+    private func stopfreakydog(_ proc: RemoteCall) {
+        freakyrunning = false
+        freakyseq += 1
+        let result = disable_freaky_dog_overlay(proc)
+        mgr.logmsg("(rc) disable_freaky_dog_overlay() -> \(result)")
     }
 
     private func parseRemoteCallArgs(_ text: String) -> (args: [UInt64], error: String?) {
