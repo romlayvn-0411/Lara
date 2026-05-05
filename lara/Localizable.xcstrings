@@ -1103,35 +1103,6 @@
         }
       }
     },
-    "Debugger": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Debugger"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Trình Gỡ lỗi"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "调试器"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "مصحح الأخطاء"
-          }
-        }
-      }
-    },
     "Delete": {
       "extractionState": "manual",
       "localizations": {
@@ -1389,35 +1360,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "تنزيل Kernelcache"
-          }
-        }
-      }
-    },
-    "Dynamic Island (17.4+, might not work)": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dynamic Island (17.4+, might not work)"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dynamic Island (17.4+, có thể không hoạt động)"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "灵动岛 (17.4+, 可能无效)"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "الجزيرة الديناميكية (17.4+، قد لا تعمل)"
           }
         }
       }
@@ -1737,35 +1679,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "كامل"
-          }
-        }
-      }
-    },
-    "GPU Time": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "GPU Time"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Thời gian GPU"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "GPU 时间"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "وقت GPU"
           }
         }
       }
@@ -3568,35 +3481,6 @@
         }
       }
     },
-    "SBX only.": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "SBX only."
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Chỉ dành cho SBX."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "仅限 SBX。"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "SBX فقط."
-          }
-        }
-      }
-    },
     "Sandbox Escape Failed": {
       "extractionState": "manual",
       "localizations": {
@@ -4148,35 +4032,6 @@
         }
       }
     },
-    "Tweaks": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tweaks"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Các Tweak"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "插件"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "تعديلات (Tweaks)"
-          }
-        }
-      }
-    },
     "Use at your own risk.": {
       "extractionState": "manual",
       "localizations": {
@@ -4289,35 +4144,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "فشل تهيئة VFS"
-          }
-        }
-      }
-    },
-    "VFS only.": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "VFS only."
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Chỉ hỗ trợ VFS."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "仅限 VFS。"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "VFS فقط."
           }
         }
       }
@@ -4844,35 +4670,6 @@
         }
       }
     },
-    "\\(theme.iconCount) icons": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(theme.iconCount) icons"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "biểu tượng \\(theme.iconCount)"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(theme.iconCount) 图标"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "أيقونات \\(theme.iconCount)."
-          }
-        }
-      }
-    },
     "EditorView, PocketPoster Helper, various improvements.": {
       "extractionState": "manual",
       "localizations": {
@@ -4931,35 +4728,6 @@
         }
       }
     },
-    "roooot": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "roooot"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "gốc rễ"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "根"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "roooot"
-          }
-        }
-      }
-    },
     "Welcome to": {
       "extractionState": "manual",
       "localizations": {
@@ -4985,35 +4753,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "مرحبا بكم في"
-          }
-        }
-      }
-    },
-    "0xjf": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "0xjf"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "0xjf"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "0xjf"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "0xjf"
           }
         }
       }
@@ -5134,64 +4873,6 @@
         }
       }
     },
-    "Sandbox": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sandbox"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hộp cát"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "沙盒"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "رمل"
-          }
-        }
-      }
-    },
-    "AppInstaller iOS": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "AppInstaller iOS"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Trình cài đặt ứng dụng iOS"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "应用安装程序 iOS"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "مثبت التطبيقات iOS"
-          }
-        }
-      }
-    },
     "Powercuff and SBCustomizer": {
       "extractionState": "manual",
       "localizations": {
@@ -5221,122 +4902,6 @@
         }
       }
     },
-    "\\(matchingApps.count) matching apps": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(matchingApps.count) matching apps"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(matchingApps.count) ứng dụng phù hợp"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(matchingApps.count) 匹配的应用程序"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(matchingApps.count) التطبيقات المطابقة"
-          }
-        }
-      }
-    },
-    "Duy Tran": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Duy Tran"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Duy Trần"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "维陈"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "دوي تران"
-          }
-        }
-      }
-    },
-    "wh1te4ever": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "wh1te4ever"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "wh1te4ever"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "wh1te4ever"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "wh1te4ever"
-          }
-        }
-      }
-    },
-    "ourproc: ": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ourproc: "
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "của chúng tôi:"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "我们的进程："
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "منتجاتنا:"
-          }
-        }
-      }
-    },
     "Unsupported": {
       "extractionState": "manual",
       "localizations": {
@@ -5362,35 +4927,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "غير مدعوم"
-          }
-        }
-      }
-    },
-    "Version \\(appversion)": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Version \\(appversion)"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Phiên bản \\(phiên bản ứng dụng)"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "版本 \\(应用程序版本)"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "الإصدار \\(appversion)"
           }
         }
       }
@@ -5453,64 +4989,6 @@
         }
       }
     },
-    "Lara": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Lara"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Lara"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "劳拉"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "لارا"
-          }
-        }
-      }
-    },
-    "Error: \\(error)": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Error: \\(error)"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Lỗi: \\(lỗi)"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "错误：\\（错误）"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "خطأ: \\(خطأ)"
-          }
-        }
-      }
-    },
     "Some custom fonts will not work for app icons and other stuff, some will not work at all. If you want them to work, patch your .ttf [here](https://neonmodder123.github.io/lara-font-patcher/).": {
       "extractionState": "manual",
       "localizations": {
@@ -5536,64 +5014,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "لن تعمل بعض الخطوط المخصصة مع أيقونات التطبيقات والأشياء الأخرى، وبعضها لن يعمل على الإطلاق. إذا كنت تريد منهم أن يعملوا، فقم بتصحيح ملف .ttf الخاص بك [هنا](https://neonmodder123.github.io/lara-font-patcher/)."
-          }
-        }
-      }
-    },
-    "\\(hsRows)": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(hsRows)"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(hsRows)"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(hsRows)"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(hsRows)"
-          }
-        }
-      }
-    },
-    "RemoteCall": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "RemoteCall"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cuộc gọi từ xa"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "远程呼叫"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "اتصال عن بعد"
           }
         }
       }
@@ -5656,122 +5076,6 @@
         }
       }
     },
-    "EDR": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "EDR"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "EDR"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "EDR"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "إدر"
-          }
-        }
-      }
-    },
-    "Kernelcache": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Kernelcache"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "bộ đệm hạt nhân"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "内核缓存"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ذاكرة التخزين المؤقتة"
-          }
-        }
-      }
-    },
-    "Delete \\(selectedcount) matched path\\(selectedcount == 1 ? ": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Delete \\(selectedcount) matched path\\(selectedcount == 1 ? "
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Xóa đường dẫn phù hợp \\(selectedcount)\\(selectedcount == 1 ?"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "删除\\(selectedcount)匹配路径\\(selectedcount == 1 ?"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "حذف \\(selectedcount) المسار المطابق\\(selectedcount == 1 ?"
-          }
-        }
-      }
-    },
-    "PID:": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "PID:"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "PID:"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "PID："
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "معرف المنتج:"
-          }
-        }
-      }
-    },
     "Sandbox escape not ready. Run the sandbox escape first.": {
       "extractionState": "manual",
       "localizations": {
@@ -5797,35 +5101,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "الهروب من وضع الحماية غير جاهز. قم بتشغيل Sandbox Escape أولاً."
-          }
-        }
-      }
-    },
-    "\\(Int((mgr.eu1progress + mgr.eu2progress)/2 * 100))%": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(Int((mgr.eu1progress + mgr.eu2progress)/2 * 100))%"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(Int((mgr.eu1progress + mgr.eu2progress)/2 * 100))%"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(Int((mgr.eu1progress + mgr.eu2progress)/2 * 100))%"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(Int((mgr.eu1progress + mgr.eu2progress)/2 * 100))%"
           }
         }
       }
@@ -5884,35 +5159,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "يحتاج RemoteCall إلى سياق تشغيل LiveContainer ممكّن لـ PAC. قد يستمر استغلال الثغرة الرئيسية في العمل عندما لا يكون RemoteCall متاحًا."
-          }
-        }
-      }
-    },
-    "\\(customTimeoutMs) ms": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(customTimeoutMs) ms"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(customTimeoutMs) ms"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(customTimeoutMs) 毫秒"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(customTimeoutMs) مللي ثانية"
           }
         }
       }
@@ -6004,35 +5250,6 @@
         }
       }
     },
-    "ourtask: ": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ourtask: "
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "nhiệm vụ của chúng tôi:"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "我们的任务："
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "مهمتنا:"
-          }
-        }
-      }
-    },
     "To use UIKit Debug Overlay, double tap the status bar.": {
       "extractionState": "manual",
       "localizations": {
@@ -6058,64 +5275,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "لاستخدام UIKit Debug Overlay، انقر نقرًا مزدوجًا فوق شريط الحالة."
-          }
-        }
-      }
-    },
-    "Repos": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Repos"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Kho lưu trữ"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "回购协议"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "اتفاقيات إعادة الشراء"
-          }
-        }
-      }
-    },
-    "JIT": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "JIT"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "JIT"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "准时生产"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "جيت"
           }
         }
       }
@@ -6149,64 +5308,6 @@
         }
       }
     },
-    "RespringCC": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "RespringCC"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "RespringCC"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "再生CC"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ريسبرينغCC"
-          }
-        }
-      }
-    },
-    "\\(columns)": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(columns)"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(cột)"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\（列）"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(الأعمدة)"
-          }
-        }
-      }
-    },
     "No apps found": {
       "extractionState": "manual",
       "localizations": {
@@ -6232,35 +5333,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "لم يتم العثور على أي تطبيقات"
-          }
-        }
-      }
-    },
-    "Jurre": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Jurre"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Jurre"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "于雷"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "جوري"
           }
         }
       }
@@ -6381,64 +5453,6 @@
         }
       }
     },
-    "drkm9743": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "drkm9743"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "drkm9743"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "dkm9743"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "drkm9743"
-          }
-        }
-      }
-    },
-    "Respring": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Respring"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Respring"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "重生"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ريسبرينغ"
-          }
-        }
-      }
-    },
     "Only works on apps with the `get-task-allow` entitlement.": {
       "extractionState": "manual",
       "localizations": {
@@ -6497,64 +5511,6 @@
         }
       }
     },
-    "Liquid Glass": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Liquid Glass"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Thủy tinh lỏng"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "液态玻璃"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "الزجاج السائل"
-          }
-        }
-      }
-    },
-    "\\(hsColumns)": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(hsColumns)"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(hsColumns)"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(hsColumns)"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(hsColumns)"
-          }
-        }
-      }
-    },
     "Enable Floating Dock": {
       "extractionState": "manual",
       "localizations": {
@@ -6584,93 +5540,6 @@
         }
       }
     },
-    "Scream": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Scream"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "La hét"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "尖叫"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "الصراخ"
-          }
-        }
-      }
-    },
-    "Class:": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Class:"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Lớp học:"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "班级："
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "فصل:"
-          }
-        }
-      }
-    },
-    "offsets": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "offsets"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "sự bù đắp"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "偏移量"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "تعويضات"
-          }
-        }
-      }
-    },
     "Use at your own risk. Always keep a backup of your MobileGestalt somewhere safe.": {
       "extractionState": "manual",
       "localizations": {
@@ -6696,35 +5565,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "استخدم على مسؤوليتك الخاصة. احتفظ دائمًا بنسخة احتياطية من MobileGestalt الخاص بك في مكان آمن."
-          }
-        }
-      }
-    },
-    "SpringBoard": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "SpringBoard"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ván mùa xuân"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "跳板"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "SpringBoard"
           }
         }
       }
@@ -6787,35 +5627,6 @@
         }
       }
     },
-    "ASLR": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ASLR"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ASLR"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ASLR"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ASLR"
-          }
-        }
-      }
-    },
     "Enables installing of EU/Japan Marketplace apps.": {
       "extractionState": "manual",
       "localizations": {
@@ -6874,64 +5685,6 @@
         }
       }
     },
-    "ASLR:": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ASLR:"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ASLR:"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ASLR："
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ASLR:"
-          }
-        }
-      }
-    },
-    "Example: \n\\(defaultrepo)": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Example: \n\\(defaultrepo)"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ví dụ: \n\\(mặc địnhrepo)"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "示例： \n\\(默认仓库)"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "مثال: \n\\(الافتراضي)"
-          }
-        }
-      }
-    },
     "Enable UIKit Debug Overlay": {
       "extractionState": "manual",
       "localizations": {
@@ -6957,35 +5710,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "تمكين UIKit Debug Overlay"
-          }
-        }
-      }
-    },
-    "jailbreak.party": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "jailbreak.party"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "jailbreak.party"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "越狱派对"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "jailbreak.party"
           }
         }
       }
@@ -7048,35 +5772,6 @@
         }
       }
     },
-    "Delete \\(delitem?.name ?? ": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Delete \\(delitem?.name ?? "
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Xóa \\(delitem?.name ??"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "删除 \\(delitem?.name ??"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "حذف \\(حذف؟.الاسم؟؟"
-          }
-        }
-      }
-    },
     "OK": {
       "extractionState": "manual",
       "localizations": {
@@ -7102,64 +5797,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "نعم"
-          }
-        }
-      }
-    },
-    "Version \\(AppInfo.appVersion) (\\(AppInfo.appBuild))": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Version \\(AppInfo.appVersion) (\\(AppInfo.appBuild))"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Phiên bản \\(AppInfo.appVersion) (\\(AppInfo.appBuild))"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "版本 \\(AppInfo.appVersion) (\\(AppInfo.appBuild))"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "الإصدار \\(AppInfo.appVersion) (\\(AppInfo.appBuild))"
-          }
-        }
-      }
-    },
-    "Emojis — \\(repodata.name)": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Emojis — \\(repodata.name)"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Biểu tượng cảm xúc — \\(repodata.name)"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "表情符号 — \\(repodata.name)"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "الرموز التعبيرية — \\(repodata.name)"
           }
         }
       }
@@ -7193,35 +5830,6 @@
         }
       }
     },
-    "UID:": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "UID:"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "UID:"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "用户识别号："
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "المعرف الفريد:"
-          }
-        }
-      }
-    },
     "All of the DirtyZero tweaks.": {
       "extractionState": "manual",
       "localizations": {
@@ -7251,35 +5859,6 @@
         }
       }
     },
-    "MobileGestalt": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "MobileGestalt"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Gestalt di động"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "移动格式塔"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "موبايل الجشطالت"
-          }
-        }
-      }
-    },
     "This file manager is powered by vfs namecache lookups, not full directory enumeration. It may display inaccurate information.": {
       "extractionState": "manual",
       "localizations": {
@@ -7305,35 +5884,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "يتم تشغيل مدير الملفات هذا بواسطة عمليات البحث عن ذاكرة التخزين المؤقت لـ vfs، وليس من خلال تعداد الدليل الكامل. قد يعرض معلومات غير دقيقة."
-          }
-        }
-      }
-    },
-    "Tools": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tools"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Công cụ"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "工具"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "أدوات"
           }
         }
       }
@@ -7392,35 +5942,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "العديد من التحسينات والميزات المتعلقة بالمكالمات عن بعد."
-          }
-        }
-      }
-    },
-    "\\(uid)": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(uid)"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(uid)"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(uid)"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(المعرف)"
           }
         }
       }
@@ -7541,35 +6062,6 @@
         }
       }
     },
-    "neon": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "neon"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "đèn neon"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "氖"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "نيون"
-          }
-        }
-      }
-    },
     "Refresh plist": {
       "extractionState": "manual",
       "localizations": {
@@ -7657,35 +6149,6 @@
         }
       }
     },
-    "cd /path/to/ipsw_3.1.671_something_something/": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "cd /path/to/ipsw_3.1.671_something_something/"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "cd /path/to/ipsw_3.1.671_something_something/"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "cd /path/to/ipsw_3.1.671_something_something/"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "مؤتمر نزع السلاح /path/to/ipsw_3.1.671_something_something/"
-          }
-        }
-      }
-    },
     "Use at your own risk. Always keep a backup of \"/var/Managed Preferences/mobile/.GlobalPreferences.plist\" somewhere safe.": {
       "extractionState": "manual",
       "localizations": {
@@ -7715,35 +6178,6 @@
         }
       }
     },
-    "Dynamic Island": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dynamic Island"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Đảo năng động"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "动态岛"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "جزيرة ديناميكية"
-          }
-        }
-      }
-    },
     "Override user interface idiom to iPadOS, so you could use all iPadOS multitasking features on iPhone. Gives you the same capabilities as TrollPad, but may cause some issues.\nPLEASE DO NOT TURN OFF SHOW DOCK IN STAGE MANAGER OTHERWISE YOUR PHONE WILL BOOTLOOP WHEN ROTATING TO LANDSCAPE.": {
       "extractionState": "manual",
       "localizations": {
@@ -7769,35 +6203,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "تجاوز لغة واجهة المستخدم لنظام iPadOS، حتى تتمكن من استخدام جميع ميزات المهام المتعددة لنظام iPadOS على iPhone. يمنحك نفس إمكانيات TrollPad، ولكنه قد يسبب بعض المشكلات.\nيرجى عدم إيقاف تشغيل SHOW DOCK IN STAGE MANAGER وإلا فسوف يقوم هاتفك بالتمهيد عند الدوران إلى الوضع الأفقي."
-          }
-        }
-      }
-    },
-    "\\(pid)": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(pid)"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(pid)"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(pid)"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "\\(معرف الهوية)"
           }
         }
       }
