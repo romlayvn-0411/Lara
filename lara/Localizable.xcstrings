@@ -59,35 +59,6 @@
         }
       }
     },
-    "1. Switch to hybrid mode in settings \n2. Escape the Sandbox \n3. Initialise VFS\n4. Try again.": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "1. Switch to hybrid mode in settings \n2. Escape the Sandbox \n3. Initialise VFS\n4. Try again."
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "1. Chuyển sang chế độ Hybrid trong cài đặt \n2. Thoát Sandbox \n3. Khởi tạo VFS\n4. Thử lại."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "1. 在设置中切换到混合模式 \n2. 逃逸沙盒 \n3. 初始化 VFS\n4. 重试。"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "1. قم بالتبديل إلى الوضع الهجين في الإعدادات \n2. الهروب من Sandbox \n3. تهيئة VFS \n4. حاول مرة أخرى."
-          }
-        }
-      }
-    },
     "2. Extract the archive.": {
       "extractionState": "manual",
       "localizations": {
@@ -4815,35 +4786,6 @@
         }
       }
     },
-    "Kernel R/W is not ready. Run the exploit first.": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Kernel R/W is not ready. Run the exploit first."
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Kernel R/W chưa sẵn sàng. Chạy khai thác đầu tiên."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "内核读/写未准备好。首先运行漏洞利用程序。"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Kernel R/W غير جاهز. قم بتشغيل الاستغلال أولاً."
-          }
-        }
-      }
-    },
     "Powercuff and SBCustomizer": {
       "extractionState": "manual",
       "localizations": {
@@ -4902,35 +4844,6 @@
         }
       }
     },
-    "Select... ": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Select... "
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Lựa chọn..."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "选择..."
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "يختار..."
-          }
-        }
-      }
-    },
     "File Manager App Management": {
       "extractionState": "manual",
       "localizations": {
@@ -4956,35 +4869,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "إدارة تطبيقات مدير الملفات"
-          }
-        }
-      }
-    },
-    "Some custom fonts will not work for app icons and other stuff, some will not work at all. If you want them to work, patch your .ttf [here](https://neonmodder123.github.io/lara-font-patcher/).": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Some custom fonts will not work for app icons and other stuff, some will not work at all. If you want them to work, patch your .ttf [here](https://neonmodder123.github.io/lara-font-patcher/)."
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Một số phông chữ tùy chỉnh sẽ không hoạt động đối với các biểu tượng ứng dụng và những thứ khác, một số phông chữ khác hoàn toàn không hoạt động. Nếu bạn muốn chúng hoạt động, hãy vá .ttf của bạn [tại đây](https://neonmodder123.github.io/lara-font-patcher/)."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "有些自定义字体不适用于应用程序图标和其他内容，有些则根本不起作用。如果您希望它们工作，请在[此处](https://neonmodder123.github.io/lara-font-patcher/)修补您的.ttf。"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "لن تعمل بعض الخطوط المخصصة مع أيقونات التطبيقات والأشياء الأخرى، وبعضها لن يعمل على الإطلاق. إذا كنت تريد منهم أن يعملوا، فقم بتصحيح ملف .ttf الخاص بك [هنا](https://neonmodder123.github.io/lara-font-patcher/)."
           }
         }
       }
@@ -5043,35 +4927,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "إعادة التحميل من plist"
-          }
-        }
-      }
-    },
-    "Sandbox escape not ready. Run the sandbox escape first.": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sandbox escape not ready. Run the sandbox escape first."
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Lối thoát hộp cát chưa sẵn sàng. Chạy lối thoát hộp cát trước."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "沙箱逃逸尚未准备好。首先运行沙箱逃逸。"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "الهروب من وضع الحماية غير جاهز. قم بتشغيل Sandbox Escape أولاً."
           }
         }
       }
@@ -5163,35 +5018,6 @@
         }
       }
     },
-    "Address Space Layout Randomization. Probably not useful for you.": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Address Space Layout Randomization. Probably not useful for you."
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ngẫu nhiên hóa bố cục không gian địa chỉ. Có lẽ không hữu ích cho bạn."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "地址空间布局随机化。可能对你没用。"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "عنوان تخطيط المساحة العشوائية. ربما ليست مفيدة بالنسبة لك."
-          }
-        }
-      }
-    },
     "Get the needed hashes for Pocket Poster without the need of a PC.": {
       "extractionState": "manual",
       "localizations": {
@@ -5250,35 +5076,6 @@
         }
       }
     },
-    "RemoteCall is not initialized. How are you here?": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "RemoteCall is not initialized. How are you here?"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "RemoteCall chưa được khởi tạo. Bạn ở đây thế nào?"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "RemoteCall 未初始化。你怎么在这里？"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "لم تتم تهيئة RemoteCall. كيف حالك هنا؟"
-          }
-        }
-      }
-    },
     "No apps found": {
       "extractionState": "manual",
       "localizations": {
@@ -5304,93 +5101,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "لم يتم العثور على أي تطبيقات"
-          }
-        }
-      }
-    },
-    "Hybrid: SBX for read, VFS for write.\nBest method ever. (Thanks Huy)": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hybrid: SBX for read, VFS for write.\nBest method ever. (Thanks Huy)"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Kết hợp: SBX để đọc, VFS để ghi.\nPhương pháp tốt nhất bao giờ hết. (Cám ơn Huy)"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "混合：SBX 用于读取，VFS 用于写入。\n有史以来最好的方法。 （谢谢休伊）"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "الهجين: SBX للقراءة، VFS للكتابة.\nأفضل طريقة على الإطلاق. (شكرا هوي)"
-          }
-        }
-      }
-    },
-    "Helped me with offsets and lots of other stuff. This project wouldnt have been possible without him!": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Helped me with offsets and lots of other stuff. This project wouldnt have been possible without him!"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Đã giúp tôi bù đắp và nhiều thứ khác. Dự án này sẽ không thể thực hiện được nếu không có anh ấy!"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "帮助我处理偏移和许多其他事情。如果没有他，这个项目就不可能实现！"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ساعدني في التعويضات والكثير من الأشياء الأخرى. هذا المشروع لم يكن ممكنا بدونه!"
-          }
-        }
-      }
-    },
-    "This will overwrite the target file with the contents of the selected source file. Target size must be >= source size.": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "This will overwrite the target file with the contents of the selected source file. Target size must be >= source size."
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Thao tác này sẽ ghi đè lên tệp đích bằng nội dung của tệp nguồn đã chọn. Kích thước mục tiêu phải >= kích thước nguồn."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "这将使用所选源文件的内容覆盖目标文件。目标大小必须 >= 源大小。"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "سيؤدي هذا إلى استبدال الملف الهدف بمحتويات الملف المصدر المحدد. يجب أن يكون حجم الهدف >= حجم المصدر."
           }
         }
       }
@@ -5565,35 +5275,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "صفوف الشاشة الرئيسية"
-          }
-        }
-      }
-    },
-    "No apps found.": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "No apps found."
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Không tìm thấy ứng dụng nào."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "没有找到应用程序。"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "لم يتم العثور على أي تطبيقات."
           }
         }
       }
@@ -6174,64 +5855,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "تجاوز لغة واجهة المستخدم لنظام iPadOS، حتى تتمكن من استخدام جميع ميزات المهام المتعددة لنظام iPadOS على iPhone. يمنحك نفس إمكانيات TrollPad، ولكنه قد يسبب بعض المشكلات.\nيرجى عدم إيقاف تشغيل SHOW DOCK IN STAGE MANAGER وإلا فسوف يقوم هاتفك بالتمهيد عند الدوران إلى الوضع الأفقي."
-          }
-        }
-      }
-    },
-    "These call into SpringBoard via RemoteCall. Keep RemoteCall initialized while running them.": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "These call into SpringBoard via RemoteCall. Keep RemoteCall initialized while running them."
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Những cuộc gọi này đến SpringBoard thông qua RemoteCall. Giữ RemoteCall được khởi tạo trong khi chạy chúng."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "这些通过 RemoteCall 调用 SpringBoard。在运行 RemoteCall 时保持 RemoteCall 处于初始化状态。"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "يتم استدعاء هذه إلى SpringBoard عبر RemoteCall. حافظ على تهيئة RemoteCall أثناء تشغيلها."
-          }
-        }
-      }
-    },
-    "Big thanks [jailbreak.party](https://github.com/jailbreakdotparty/dirtyZero)!\nNOTE: A lot of Tweaks currently dont work. This will probably be fixed in a future update.": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Big thanks [jailbreak.party](https://github.com/jailbreakdotparty/dirtyZero)!\nNOTE: A lot of Tweaks currently dont work. This will probably be fixed in a future update."
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Xin chân thành cảm ơn [jailbreak.party](https://github.com/jailbreakdotparty/dirtyZero)!\nLƯU Ý: Hiện tại có rất nhiều Tinh chỉnh không hoạt động. Điều này có thể sẽ được sửa trong bản cập nhật trong tương lai."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "非常感谢 [jailbreak.party](https://github.com/jailbreakdotparty/dirtyZero)！\n注意：许多调整目前不起作用。这可能会在未来的更新中得到修复。"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "شكرًا جزيلاً [jailbreak.party](https://github.com/jailbreakdotparty/dirtyZero)!\nملحوظة: الكثير من التعديلات لا تعمل حاليًا. من المحتمل أن يتم إصلاح هذا في التحديث المستقبلي."
           }
         }
       }
