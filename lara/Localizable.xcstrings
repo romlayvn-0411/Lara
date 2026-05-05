@@ -4641,35 +4641,6 @@
         }
       }
     },
-    "RemoteCall is still in development and may not work properly 100% of the time.": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "RemoteCall is still in development and may not work properly 100% of the time."
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ứng dụng RemoteCall vẫn đang trong quá trình phát triển và có thể không hoạt động hoàn hảo 100% mọi lúc."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "RemoteCall 仍在开发中，可能无法 100% 正常工作。"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "لا يزال تطبيق RemoteCall قيد التطوير وقد لا يعمل بشكل صحيح بنسبة 100% من الوقت."
-          }
-        }
-      }
-    },
     "EditorView, PocketPoster Helper, various improvements.": {
       "extractionState": "manual",
       "localizations": {
