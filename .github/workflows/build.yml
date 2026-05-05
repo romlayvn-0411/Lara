@@ -95,9 +95,12 @@ jobs:
 
       - name: build release notes
         run: |
-          ENTRY="lara_${COMMIT} (${DATE}):\n${COMMITS}\n\n"
-
-          printf "%s\n%s" "$ENTRY" "$BODY" > release_notes.txt
+          {
+            echo "lara_${COMMIT} (${DATE}):"
+            echo "${COMMITS}"
+            echo ""
+            echo ""
+          } >> release_notes.txt
 
       - name: create or update nightly release
         env:
