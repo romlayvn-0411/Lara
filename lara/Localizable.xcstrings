@@ -4813,8 +4813,9 @@
             "value": "سيؤدي هذا إلى استبدال الملف الهدف بمحتويات الملف المصدر المحدد.\nيجب أن يكون الحجم الهدف >= الحجم المصدر."
           }
         }
-      },
-      "RemoteCall is still in development and may not work properly 100% of the time.": {
+      }
+    },
+    "RemoteCall is still in development and may not work properly 100% of the time.": {
       "extractionState": "manual",
       "localizations": {
         "en": {
@@ -4839,6 +4840,3022 @@
           "stringUnit": {
             "state": "translated",
             "value": "لا يزال تطبيق RemoteCall قيد التطوير وقد لا يعمل بشكل صحيح بنسبة 100% من الوقت."
+          }
+        }
+      }
+    },
+    "\\(theme.iconCount) icons": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(theme.iconCount) icons"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "biểu tượng \\(theme.iconCount)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(theme.iconCount) 图标"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أيقونات \\(theme.iconCount)."
+          }
+        }
+      }
+    },
+    "EditorView, PocketPoster Helper, various improvements.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EditorView, PocketPoster Helper, various improvements."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EditorView, PocketPoster Helper, nhiều cải tiến khác nhau."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EditorView、PocketPoster Helper、各种改进。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EditorView، مساعد PocketPoster، تحسينات مختلفة."
+          }
+        }
+      }
+    },
+    "This browser is powered by vfs namecache lookups, not full directory enumeration. Some folders may appear empty unless entries are already cached. Symlinks may also be shown as files even when their targets are directories.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This browser is powered by vfs namecache lookups, not full directory enumeration. Some folders may appear empty unless entries are already cached. Symlinks may also be shown as files even when their targets are directories."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trình duyệt này được hỗ trợ bởi tra cứu namecache vfs, không liệt kê thư mục đầy đủ. Một số thư mục có thể trống trừ khi các mục đã được lưu vào bộ nhớ đệm. Liên kết tượng trưng cũng có thể được hiển thị dưới dạng tệp ngay cả khi mục tiêu của chúng là thư mục."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "该浏览器由 vfs 名称缓存查找提供支持，而不是完整目录枚举。除非条目已缓存，否则某些文件夹可能会显示为空。即使符号链接的目标是目录，也可能显示为文件。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يتم تشغيل هذا المتصفح بواسطة عمليات البحث عن ذاكرة التخزين المؤقت لـ vfs، وليس من خلال تعداد الدليل الكامل. قد تظهر بعض المجلدات فارغة ما لم يتم تخزين الإدخالات مؤقتًا بالفعل. يمكن أيضًا عرض الروابط الرمزية كملفات حتى عندما تكون أهدافها عبارة عن أدلة."
+          }
+        }
+      }
+    },
+    "roooot": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "roooot"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "gốc rễ"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "根"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "roooot"
+          }
+        }
+      }
+    },
+    "Welcome to": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcome to"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chào mừng đến với"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "欢迎来到"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مرحبا بكم في"
+          }
+        }
+      }
+    },
+    "0xjf": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0xjf"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0xjf"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0xjf"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0xjf"
+          }
+        }
+      }
+    },
+    "Call": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Call"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gọi"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "称呼"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يتصل"
+          }
+        }
+      }
+    },
+    "Overwrite eligibility (one time setup)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Overwrite eligibility (one time setup)"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tính đủ điều kiện ghi đè (thiết lập một lần)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "覆盖资格（一次性设置）"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استبدال الأهلية (الإعداد لمرة واحدة)"
+          }
+        }
+      }
+    },
+    "Generic Youtube Tweaks": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Generic Youtube Tweaks"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tinh chỉnh Youtube chung"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通用 YouTube 调整"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعديلات اليوتيوب العامة"
+          }
+        }
+      }
+    },
+    "Kernel R/W is not ready. Run the exploit first.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kernel R/W is not ready. Run the exploit first."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kernel R/W chưa sẵn sàng. Chạy khai thác đầu tiên."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "内核读/写未准备好。首先运行漏洞利用程序。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kernel R/W غير جاهز. قم بتشغيل الاستغلال أولاً."
+          }
+        }
+      }
+    },
+    "Sandbox": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sandbox"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hộp cát"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "沙盒"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "رمل"
+          }
+        }
+      }
+    },
+    "AppInstaller iOS": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AppInstaller iOS"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trình cài đặt ứng dụng iOS"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "应用安装程序 iOS"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مثبت التطبيقات iOS"
+          }
+        }
+      }
+    },
+    "Powercuff and SBCustomizer": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Powercuff and SBCustomizer"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Powercuff và SBCustomizer"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Powercuff 和 SBCustomizer"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Powercuff وSBCustomizer"
+          }
+        }
+      }
+    },
+    "\\(matchingApps.count) matching apps": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(matchingApps.count) matching apps"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(matchingApps.count) ứng dụng phù hợp"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(matchingApps.count) 匹配的应用程序"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(matchingApps.count) التطبيقات المطابقة"
+          }
+        }
+      }
+    },
+    "Duy Tran": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duy Tran"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duy Trần"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "维陈"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "دوي تران"
+          }
+        }
+      }
+    },
+    "wh1te4ever": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "wh1te4ever"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "wh1te4ever"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "wh1te4ever"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "wh1te4ever"
+          }
+        }
+      }
+    },
+    "ourproc: ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ourproc: "
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "của chúng tôi:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我们的进程："
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "منتجاتنا:"
+          }
+        }
+      }
+    },
+    "Unsupported": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unsupported"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Không được hỗ trợ"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不支持"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "غير مدعوم"
+          }
+        }
+      }
+    },
+    "Version \\(appversion)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Version \\(appversion)"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Phiên bản \\(phiên bản ứng dụng)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "版本 \\(应用程序版本)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الإصدار \\(appversion)"
+          }
+        }
+      }
+    },
+    "Select... ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Select... "
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lựa chọn..."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择..."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يختار..."
+          }
+        }
+      }
+    },
+    "File Manager App Management": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "File Manager App Management"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quản lý ứng dụng Trình quản lý tệp"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "文件管理器应用程序管理"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إدارة تطبيقات مدير الملفات"
+          }
+        }
+      }
+    },
+    "Lara": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lara"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lara"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "劳拉"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لارا"
+          }
+        }
+      }
+    },
+    "Error: \\(error)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error: \\(error)"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lỗi: \\(lỗi)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "错误：\\（错误）"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خطأ: \\(خطأ)"
+          }
+        }
+      }
+    },
+    "Some custom fonts will not work for app icons and other stuff, some will not work at all. If you want them to work, patch your .ttf [here](https://neonmodder123.github.io/lara-font-patcher/).": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Some custom fonts will not work for app icons and other stuff, some will not work at all. If you want them to work, patch your .ttf [here](https://neonmodder123.github.io/lara-font-patcher/)."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Một số phông chữ tùy chỉnh sẽ không hoạt động đối với các biểu tượng ứng dụng và những thứ khác, một số phông chữ khác hoàn toàn không hoạt động. Nếu bạn muốn chúng hoạt động, hãy vá .ttf của bạn [tại đây](https://neonmodder123.github.io/lara-font-patcher/)."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有些自定义字体不适用于应用程序图标和其他内容，有些则根本不起作用。如果您希望它们工作，请在[此处](https://neonmodder123.github.io/lara-font-patcher/)修补您的.ttf。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لن تعمل بعض الخطوط المخصصة مع أيقونات التطبيقات والأشياء الأخرى، وبعضها لن يعمل على الإطلاق. إذا كنت تريد منهم أن يعملوا، فقم بتصحيح ملف .ttf الخاص بك [هنا](https://neonmodder123.github.io/lara-font-patcher/)."
+          }
+        }
+      }
+    },
+    "\\(hsRows)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(hsRows)"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(hsRows)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(hsRows)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(hsRows)"
+          }
+        }
+      }
+    },
+    "RemoteCall": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RemoteCall"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuộc gọi từ xa"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "远程呼叫"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اتصال عن بعد"
+          }
+        }
+      }
+    },
+    "not .ttc": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "not .ttc"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "không phải .ttc"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不是.ttc"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ليس .ttc"
+          }
+        }
+      }
+    },
+    "Reload from plist": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reload from plist"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tải lại từ plist"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "从 plist 重新加载"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إعادة التحميل من plist"
+          }
+        }
+      }
+    },
+    "EDR": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EDR"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EDR"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EDR"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إدر"
+          }
+        }
+      }
+    },
+    "Kernelcache": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kernelcache"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "bộ đệm hạt nhân"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "内核缓存"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ذاكرة التخزين المؤقتة"
+          }
+        }
+      }
+    },
+    "Delete \\(selectedcount) matched path\\(selectedcount == 1 ? ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete \\(selectedcount) matched path\\(selectedcount == 1 ? "
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Xóa đường dẫn phù hợp \\(selectedcount)\\(selectedcount == 1 ?"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "删除\\(selectedcount)匹配路径\\(selectedcount == 1 ?"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حذف \\(selectedcount) المسار المطابق\\(selectedcount == 1 ?"
+          }
+        }
+      }
+    },
+    "PID:": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PID:"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PID:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PID："
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "معرف المنتج:"
+          }
+        }
+      }
+    },
+    "Sandbox escape not ready. Run the sandbox escape first.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sandbox escape not ready. Run the sandbox escape first."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lối thoát hộp cát chưa sẵn sàng. Chạy lối thoát hộp cát trước."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "沙箱逃逸尚未准备好。首先运行沙箱逃逸。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الهروب من وضع الحماية غير جاهز. قم بتشغيل Sandbox Escape أولاً."
+          }
+        }
+      }
+    },
+    "\\(Int((mgr.eu1progress + mgr.eu2progress)/2 * 100))%": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(Int((mgr.eu1progress + mgr.eu2progress)/2 * 100))%"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(Int((mgr.eu1progress + mgr.eu2progress)/2 * 100))%"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(Int((mgr.eu1progress + mgr.eu2progress)/2 * 100))%"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(Int((mgr.eu1progress + mgr.eu2progress)/2 * 100))%"
+          }
+        }
+      }
+    },
+    "Manually edit and save offsets. Values persist across launches.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Manually edit and save offsets. Values persist across launches."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chỉnh sửa thủ công và lưu offset. Giá trị vẫn tồn tại qua các lần ra mắt."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "手动编辑并保存偏移。价值观在产品发布过程中始终保持不变。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحرير الإزاحات وحفظها يدويًا. تستمر القيم عبر عمليات الإطلاق."
+          }
+        }
+      }
+    },
+    "RemoteCall needs a PAC-enabled LiveContainer launch context. The main exploit may still work when RemoteCall is unavailable.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RemoteCall needs a PAC-enabled LiveContainer launch context. The main exploit may still work when RemoteCall is unavailable."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RemoteCall cần bối cảnh khởi chạy LiveContainer hỗ trợ PAC. Việc khai thác chính có thể vẫn hoạt động khi RemoteCall không khả dụng."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RemoteCall 需要启用 PAC 的 LiveContainer 启动上下文。当 RemoteCall 不可用时，主要漏洞可能仍然有效。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يحتاج RemoteCall إلى سياق تشغيل LiveContainer ممكّن لـ PAC. قد يستمر استغلال الثغرة الرئيسية في العمل عندما لا يكون RemoteCall متاحًا."
+          }
+        }
+      }
+    },
+    "\\(customTimeoutMs) ms": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(customTimeoutMs) ms"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(customTimeoutMs) ms"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(customTimeoutMs) 毫秒"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(customTimeoutMs) مللي ثانية"
+          }
+        }
+      }
+    },
+    "Pocket Poster": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pocket Poster"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Áp phích bỏ túi"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "袖珍海报"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ملصق الجيب"
+          }
+        }
+      }
+    },
+    "Address Space Layout Randomization. Probably not useful for you.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Address Space Layout Randomization. Probably not useful for you."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ngẫu nhiên hóa bố cục không gian địa chỉ. Có lẽ không hữu ích cho bạn."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "地址空间布局随机化。可能对你没用。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عنوان تخطيط المساحة العشوائية. ربما ليست مفيدة بالنسبة لك."
+          }
+        }
+      }
+    },
+    "Get the needed hashes for Pocket Poster without the need of a PC.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Get the needed hashes for Pocket Poster without the need of a PC."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nhận các giá trị băm cần thiết cho Pocket Poster mà không cần PC."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无需 PC 即可获取 Pocket Poster 所需的哈希值。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "احصل على التجزئات المطلوبة لـ Pocket Poster دون الحاجة إلى جهاز كمبيوتر."
+          }
+        }
+      }
+    },
+    "ourtask: ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ourtask: "
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "nhiệm vụ của chúng tôi:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我们的任务："
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مهمتنا:"
+          }
+        }
+      }
+    },
+    "To use UIKit Debug Overlay, double tap the status bar.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "To use UIKit Debug Overlay, double tap the status bar."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Để sử dụng Lớp phủ gỡ lỗi UIKit, hãy nhấn đúp vào thanh trạng thái."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "要使用 UIKit 调试叠加，请双击状态栏。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لاستخدام UIKit Debug Overlay، انقر نقرًا مزدوجًا فوق شريط الحالة."
+          }
+        }
+      }
+    },
+    "Repos": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Repos"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kho lưu trữ"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "回购协议"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اتفاقيات إعادة الشراء"
+          }
+        }
+      }
+    },
+    "JIT": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "JIT"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "JIT"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "准时生产"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جيت"
+          }
+        }
+      }
+    },
+    "RemoteCall is not initialized. How are you here?": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RemoteCall is not initialized. How are you here?"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RemoteCall chưa được khởi tạo. Bạn ở đây thế nào?"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RemoteCall 未初始化。你怎么在这里？"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم تتم تهيئة RemoteCall. كيف حالك هنا؟"
+          }
+        }
+      }
+    },
+    "RespringCC": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RespringCC"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RespringCC"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "再生CC"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ريسبرينغCC"
+          }
+        }
+      }
+    },
+    "\\(columns)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(columns)"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(cột)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\（列）"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(الأعمدة)"
+          }
+        }
+      }
+    },
+    "No apps found": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No apps found"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Không tìm thấy ứng dụng nào"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "没有找到应用程序"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم يتم العثور على أي تطبيقات"
+          }
+        }
+      }
+    },
+    "Jurre": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jurre"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jurre"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "于雷"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جوري"
+          }
+        }
+      }
+    },
+    "Hybrid: SBX for read, VFS for write.\nBest method ever. (Thanks Huy)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hybrid: SBX for read, VFS for write.\nBest method ever. (Thanks Huy)"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kết hợp: SBX để đọc, VFS để ghi.\nPhương pháp tốt nhất bao giờ hết. (Cám ơn Huy)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "混合：SBX 用于读取，VFS 用于写入。\n有史以来最好的方法。 （谢谢休伊）"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الهجين: SBX للقراءة، VFS للكتابة.\nأفضل طريقة على الإطلاق. (شكرا هوي)"
+          }
+        }
+      }
+    },
+    "Helped me with offsets and lots of other stuff. This project wouldnt have been possible without him!": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Helped me with offsets and lots of other stuff. This project wouldnt have been possible without him!"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đã giúp tôi bù đắp và nhiều thứ khác. Dự án này sẽ không thể thực hiện được nếu không có anh ấy!"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "帮助我处理偏移和许多其他事情。如果没有他，这个项目就不可能实现！"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ساعدني في التعويضات والكثير من الأشياء الأخرى. هذا المشروع لم يكن ممكنا بدونه!"
+          }
+        }
+      }
+    },
+    "This will overwrite the target file with the contents of the selected source file. Target size must be >= source size.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This will overwrite the target file with the contents of the selected source file. Target size must be >= source size."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thao tác này sẽ ghi đè lên tệp đích bằng nội dung của tệp nguồn đã chọn. Kích thước mục tiêu phải >= kích thước nguồn."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "这将使用所选源文件的内容覆盖目标文件。目标大小必须 >= 源大小。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سيؤدي هذا إلى استبدال الملف الهدف بمحتويات الملف المصدر المحدد. يجب أن يكون حجم الهدف >= حجم المصدر."
+          }
+        }
+      }
+    },
+    "Note: some tweaks may not work or cause instability.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Note: some tweaks may not work or cause instability."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lưu ý: một số chỉnh sửa có thể không hoạt động hoặc gây mất ổn định."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "注意：某些调整可能不起作用或导致不稳定。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ملحوظة: بعض التعديلات قد لا تعمل أو تسبب عدم الاستقرار."
+          }
+        }
+      }
+    },
+    "drkm9743": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "drkm9743"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "drkm9743"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "dkm9743"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "drkm9743"
+          }
+        }
+      }
+    },
+    "Respring": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Respring"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Respring"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重生"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ريسبرينغ"
+          }
+        }
+      }
+    },
+    "Only works on apps with the `get-task-allow` entitlement.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only works on apps with the `get-task-allow` entitlement."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chỉ hoạt động trên các ứng dụng có quyền `get-task-allow`."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仅适用于具有“get-task-allow”权限的应用程序。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يعمل فقط على التطبيقات التي تتمتع باستحقاق \"get-task-allow\"."
+          }
+        }
+      }
+    },
+    "Pocket Poster Helper": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pocket Poster Helper"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Người trợ giúp áp phích bỏ túi"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "袖珍海报助手"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مساعد ملصق الجيب"
+          }
+        }
+      }
+    },
+    "Liquid Glass": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liquid Glass"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thủy tinh lỏng"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "液态玻璃"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الزجاج السائل"
+          }
+        }
+      }
+    },
+    "\\(hsColumns)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(hsColumns)"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(hsColumns)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(hsColumns)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(hsColumns)"
+          }
+        }
+      }
+    },
+    "Enable Floating Dock": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enable Floating Dock"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bật Dock nổi"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "启用浮动码头"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تمكين قفص الاتهام العائم"
+          }
+        }
+      }
+    },
+    "Scream": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scream"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La hét"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "尖叫"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الصراخ"
+          }
+        }
+      }
+    },
+    "Class:": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Class:"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lớp học:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "班级："
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فصل:"
+          }
+        }
+      }
+    },
+    "offsets": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "offsets"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "sự bù đắp"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "偏移量"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعويضات"
+          }
+        }
+      }
+    },
+    "Use at your own risk. Always keep a backup of your MobileGestalt somewhere safe.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use at your own risk. Always keep a backup of your MobileGestalt somewhere safe."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sử dụng có nguy cơ của riêng bạn. Luôn giữ bản sao lưu MobileGestalt của bạn ở nơi an toàn."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用风险自负。始终将 MobileGestalt 的备份保存在安全的地方。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استخدم على مسؤوليتك الخاصة. احتفظ دائمًا بنسخة احتياطية من MobileGestalt الخاص بك في مكان آمن."
+          }
+        }
+      }
+    },
+    "SpringBoard": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SpringBoard"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ván mùa xuân"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "跳板"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SpringBoard"
+          }
+        }
+      }
+    },
+    "Home screen rows": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Home screen rows"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hàng màn hình chính"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "主屏幕行"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صفوف الشاشة الرئيسية"
+          }
+        }
+      }
+    },
+    "No apps found.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No apps found."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Không tìm thấy ứng dụng nào."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "没有找到应用程序。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم يتم العثور على أي تطبيقات."
+          }
+        }
+      }
+    },
+    "ASLR": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ASLR"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ASLR"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ASLR"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ASLR"
+          }
+        }
+      }
+    },
+    "Enables installing of EU/Japan Marketplace apps.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enables installing of EU/Japan Marketplace apps."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cho phép cài đặt ứng dụng EU/Nhật Bản trên Marketplace."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允许安装欧盟/日本市场应用程序。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لتمكين تثبيت تطبيقات السوق الأوروبية/اليابان."
+          }
+        }
+      }
+    },
+    "Timeout": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Timeout"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hết giờ"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "暂停"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نفذ الوقت"
+          }
+        }
+      }
+    },
+    "ASLR:": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ASLR:"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ASLR:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ASLR："
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ASLR:"
+          }
+        }
+      }
+    },
+    "Example: \n\\(defaultrepo)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Example: \n\\(defaultrepo)"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ví dụ: \n\\(mặc địnhrepo)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "示例： \n\\(默认仓库)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مثال: \n\\(الافتراضي)"
+          }
+        }
+      }
+    },
+    "Enable UIKit Debug Overlay": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enable UIKit Debug Overlay"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bật lớp phủ gỡ lỗi UIKit"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enable UIKit Debug Overlay"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تمكين UIKit Debug Overlay"
+          }
+        }
+      }
+    },
+    "jailbreak.party": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "jailbreak.party"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "jailbreak.party"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "越狱派对"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "jailbreak.party"
+          }
+        }
+      }
+    },
+    "Lara is currently not supported on this device. Possible reasons:\nYour device is newer than iOS 26.0.1\nYour device is older than iOS 17.0\nYour device has MIE\n\nLara will probably not work.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lara is currently not supported on this device. Possible reasons:\nYour device is newer than iOS 26.0.1\nYour device is older than iOS 17.0\nYour device has MIE\n\nLara will probably not work."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lara hiện không được hỗ trợ trên thiết bị này. Lý do có thể:\nThiết bị của bạn mới hơn iOS 26.0.1\nThiết bị của bạn cũ hơn iOS 17.0\nThiết bị của bạn có MIE\n\nLara có thể sẽ không hoạt động."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此设备目前不支持 Lara。可能的原因：\n您的设备比 iOS 26.0.1 更新\n您的设备早于 iOS 17.0\n您的设备有 MIE\n\n劳拉可能不会工作。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لارا غير مدعومة حاليًا على هذا الجهاز. الأسباب المحتملة:\nجهازك أحدث من iOS 26.0.1\nجهازك أقدم من iOS 17.0\nجهازك به MIE\n\nربما لن تعمل لارا."
+          }
+        }
+      }
+    },
+    "Enable Spoof EU Region": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enable Spoof EU Region"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kích hoạt khu vực EU giả mạo"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "启用欺骗欧盟区域"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تمكين محاكاة ساخرة لمنطقة الاتحاد الأوروبي"
+          }
+        }
+      }
+    },
+    "Delete \\(delitem?.name ?? ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete \\(delitem?.name ?? "
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Xóa \\(delitem?.name ??"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "删除 \\(delitem?.name ??"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حذف \\(حذف؟.الاسم؟؟"
+          }
+        }
+      }
+    },
+    "OK": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ĐƯỢC RỒI"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "好的"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نعم"
+          }
+        }
+      }
+    },
+    "Version \\(AppInfo.appVersion) (\\(AppInfo.appBuild))": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Version \\(AppInfo.appVersion) (\\(AppInfo.appBuild))"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Phiên bản \\(AppInfo.appVersion) (\\(AppInfo.appBuild))"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "版本 \\(AppInfo.appVersion) (\\(AppInfo.appBuild))"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الإصدار \\(AppInfo.appVersion) (\\(AppInfo.appBuild))"
+          }
+        }
+      }
+    },
+    "Emojis — \\(repodata.name)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emojis — \\(repodata.name)"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Biểu tượng cảm xúc — \\(repodata.name)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "表情符号 — \\(repodata.name)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الرموز التعبيرية — \\(repodata.name)"
+          }
+        }
+      }
+    },
+    "Calls a symbol (via dlsym) or an absolute address. Numeric args are passed as x0-x7 then stack.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calls a symbol (via dlsym) or an absolute address. Numeric args are passed as x0-x7 then stack."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gọi một ký hiệu (thông qua dlsym) hoặc một địa chỉ tuyệt đối. Các đối số dạng số được truyền dưới dạng x0-x7 rồi xếp chồng lên nhau."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "调用符号（通过 dlsym）或绝对地址。数字参数作为 x0-x7 传递，然后堆栈。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يستدعي رمزًا (عبر dlsym) أو عنوانًا مطلقًا. يتم تمرير الوسائط الرقمية كـ x0-x7 ثم يتم تكديسها."
+          }
+        }
+      }
+    },
+    "UID:": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UID:"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UID:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用户识别号："
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المعرف الفريد:"
+          }
+        }
+      }
+    },
+    "All of the DirtyZero tweaks.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All of the DirtyZero tweaks."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tất cả các chỉnh sửa DirtyZero."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "所有 DirtyZero 调整。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جميع تعديلات DirtyZero."
+          }
+        }
+      }
+    },
+    "MobileGestalt": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MobileGestalt"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gestalt di động"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "移动格式塔"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "موبايل الجشطالت"
+          }
+        }
+      }
+    },
+    "This file manager is powered by vfs namecache lookups, not full directory enumeration. It may display inaccurate information.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This file manager is powered by vfs namecache lookups, not full directory enumeration. It may display inaccurate information."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trình quản lý tệp này được cung cấp bởi tra cứu namecache vfs, không phải liệt kê thư mục đầy đủ. Nó có thể hiển thị thông tin không chính xác."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "该文件管理器由 vfs 名称缓存查找提供支持，而不是完整目录枚举。它可能会显示不准确的信息。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يتم تشغيل مدير الملفات هذا بواسطة عمليات البحث عن ذاكرة التخزين المؤقت لـ vfs، وليس من خلال تعداد الدليل الكامل. قد يعرض معلومات غير دقيقة."
+          }
+        }
+      }
+    },
+    "Tools": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tools"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Công cụ"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "工具"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أدوات"
+          }
+        }
+      }
+    },
+    "Apply Home Screen Grid": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apply Home Screen Grid"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Áp dụng lưới màn hình chính"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "应用主屏幕网格"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تطبيق شبكة الشاشة الرئيسية"
+          }
+        }
+      }
+    },
+    "Various remotecall-related improvements and features.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Various remotecall-related improvements and features."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nhiều cải tiến và tính năng liên quan đến cuộc gọi từ xa."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "各种与远程调用相关的改进和功能。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العديد من التحسينات والميزات المتعلقة بالمكالمات عن بعد."
+          }
+        }
+      }
+    },
+    "\\(uid)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(uid)"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(uid)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(uid)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(المعرف)"
+          }
+        }
+      }
+    },
+    "1. Switch to hybrid mode in settings\n2. Escape the Sandbox\n3. Initialise VFS\n4. Try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1. Switch to hybrid mode in settings\n2. Escape the Sandbox\n3. Initialise VFS\n4. Try again."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1. Chuyển sang chế độ kết hợp trong cài đặt\n2. Thoát khỏi hộp cát\n3. Khởi tạo VFS\n4. Hãy thử lại."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1.在设置中切换到混合模式\n2. 逃离沙盒\n3.初始化VFS\n4. 再试一次。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1. قم بالتبديل إلى الوضع المختلط في الإعدادات\n2. الهروب من Sandbox\n3. تهيئة VFS\n4. حاول مرة أخرى."
+          }
+        }
+      }
+    },
+    "Custom RemoteCall": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Custom RemoteCall"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuộc gọi từ xa tùy chỉnh"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自定义远程调用"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مكالمة عن بعد مخصصة"
+          }
+        }
+      }
+    },
+    "Fixed Hide Icon Labels": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fixed Hide Icon Labels"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đã sửa lỗi Ẩn Nhãn Biểu tượng"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "修复隐藏图标标签"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم إصلاح إخفاء تسميات الأيقونات"
+          }
+        }
+      }
+    },
+    "Change the way app folders get displayed in the file manager.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Change the way app folders get displayed in the file manager."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thay đổi cách hiển thị các thư mục ứng dụng trong trình quản lý tệp."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更改应用程序文件夹在文件管理器中的显示方式。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قم بتغيير طريقة عرض مجلدات التطبيق في مدير الملفات."
+          }
+        }
+      }
+    },
+    "neon": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "neon"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "đèn neon"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "氖"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نيون"
+          }
+        }
+      }
+    },
+    "Refresh plist": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Refresh plist"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Làm mới danh sách"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "刷新plist"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحديث القائمة"
+          }
+        }
+      }
+    },
+    "Home screen columns": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Home screen columns"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cột màn hình chính"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "主屏幕栏"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أعمدة الشاشة الرئيسية"
+          }
+        }
+      }
+    },
+    "The text automatically updates every MINUTE": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The text automatically updates every MINUTE"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Văn bản tự động cập nhật mỗi PHÚT"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "文本每分钟自动更新"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يتم تحديث النص تلقائيًا كل دقيقة"
+          }
+        }
+      }
+    },
+    "cd /path/to/ipsw_3.1.671_something_something/": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "cd /path/to/ipsw_3.1.671_something_something/"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "cd /path/to/ipsw_3.1.671_something_something/"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "cd /path/to/ipsw_3.1.671_something_something/"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مؤتمر نزع السلاح /path/to/ipsw_3.1.671_something_something/"
+          }
+        }
+      }
+    },
+    "Use at your own risk. Always keep a backup of \"/var/Managed Preferences/mobile/.GlobalPreferences.plist\" somewhere safe.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use at your own risk. Always keep a backup of \"/var/Managed Preferences/mobile/.GlobalPreferences.plist\" somewhere safe."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sử dụng có nguy cơ của riêng bạn. Luôn giữ bản sao lưu \"/var/Được quản lý tùy chọn/mobile/.GlobalPreferences.plist\" ở nơi an toàn."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用风险自负。始终在安全的地方保存“/var/Managed Preferences/mobile/.GlobalPreferences.plist”的备份。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استخدم على مسؤوليتك الخاصة. احتفظ دائمًا بنسخة احتياطية من \"/var/Managed Preferences/mobile/.GlobalPreferences.plist\" في مكان آمن."
+          }
+        }
+      }
+    },
+    "Dynamic Island": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dynamic Island"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đảo năng động"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "动态岛"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جزيرة ديناميكية"
+          }
+        }
+      }
+    },
+    "Override user interface idiom to iPadOS, so you could use all iPadOS multitasking features on iPhone. Gives you the same capabilities as TrollPad, but may cause some issues.\nPLEASE DO NOT TURN OFF SHOW DOCK IN STAGE MANAGER OTHERWISE YOUR PHONE WILL BOOTLOOP WHEN ROTATING TO LANDSCAPE.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Override user interface idiom to iPadOS, so you could use all iPadOS multitasking features on iPhone. Gives you the same capabilities as TrollPad, but may cause some issues.\nPLEASE DO NOT TURN OFF SHOW DOCK IN STAGE MANAGER OTHERWISE YOUR PHONE WILL BOOTLOOP WHEN ROTATING TO LANDSCAPE."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ghi đè thành ngữ giao diện người dùng sang iPadOS để bạn có thể sử dụng tất cả các tính năng đa nhiệm của iPadOS trên iPhone. Cung cấp cho bạn các khả năng tương tự như TrollPad nhưng có thể gây ra một số vấn đề.\nVUI LÒNG KHÔNG TẮT HIỂN THỊ DOCK TRONG QUẢN LÝ GIAI ĐOẠN NẾU KHÔNG ĐIỆN THOẠI CỦA BẠN SẼ KHỞI ĐỘNG KHI CHUYỂN SANG CẢNH QUAN."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "将用户界面习惯覆盖到 iPadOS，这样您就可以在 iPhone 上使用所有 iPadOS 多任务处理功能。为您提供与 TrollPad 相同的功能，但可能会导致一些问题。\n请不要关闭舞台管理器中的显示底座，否则您的手机在旋转到横向时将会启动。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تجاوز لغة واجهة المستخدم لنظام iPadOS، حتى تتمكن من استخدام جميع ميزات المهام المتعددة لنظام iPadOS على iPhone. يمنحك نفس إمكانيات TrollPad، ولكنه قد يسبب بعض المشكلات.\nيرجى عدم إيقاف تشغيل SHOW DOCK IN STAGE MANAGER وإلا فسوف يقوم هاتفك بالتمهيد عند الدوران إلى الوضع الأفقي."
+          }
+        }
+      }
+    },
+    "\\(pid)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(pid)"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(pid)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(pid)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\\(معرف الهوية)"
+          }
+        }
+      }
+    },
+    "These call into SpringBoard via RemoteCall. Keep RemoteCall initialized while running them.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "These call into SpringBoard via RemoteCall. Keep RemoteCall initialized while running them."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Những cuộc gọi này đến SpringBoard thông qua RemoteCall. Giữ RemoteCall được khởi tạo trong khi chạy chúng."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "这些通过 RemoteCall 调用 SpringBoard。在运行 RemoteCall 时保持 RemoteCall 处于初始化状态。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يتم استدعاء هذه إلى SpringBoard عبر RemoteCall. حافظ على تهيئة RemoteCall أثناء تشغيلها."
+          }
+        }
+      }
+    },
+    "Big thanks [jailbreak.party](https://github.com/jailbreakdotparty/dirtyZero)!\nNOTE: A lot of Tweaks currently dont work. This will probably be fixed in a future update.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Big thanks [jailbreak.party](https://github.com/jailbreakdotparty/dirtyZero)!\nNOTE: A lot of Tweaks currently dont work. This will probably be fixed in a future update."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Xin chân thành cảm ơn [jailbreak.party](https://github.com/jailbreakdotparty/dirtyZero)!\nLƯU Ý: Hiện tại có rất nhiều Tinh chỉnh không hoạt động. Điều này có thể sẽ được sửa trong bản cập nhật trong tương lai."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "非常感谢 [jailbreak.party](https://github.com/jailbreakdotparty/dirtyZero)！\n注意：许多调整目前不起作用。这可能会在未来的更新中得到修复。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "شكرًا جزيلاً [jailbreak.party](https://github.com/jailbreakdotparty/dirtyZero)!\nملحوظة: الكثير من التعديلات لا تعمل حاليًا. من المحتمل أن يتم إصلاح هذا في التحديث المستقبلي."
           }
         }
       }
