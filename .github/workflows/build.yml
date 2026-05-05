@@ -33,7 +33,7 @@ jobs:
           chmod +x scripts/build_ipa.sh
           ./scripts/build_ipa.sh
 
-      - name: upload build artifact (PR)
+      - name: upload build artifact (PR only)
         if: github.event_name == 'pull_request'
         uses: actions/upload-artifact@v4
         with:
@@ -71,6 +71,7 @@ jobs:
         run: |
           echo "COMMIT=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
           echo "DATE=$(date +'%Y-%m-%d %H:%M')" >> $GITHUB_ENV
+          echo "FILEDATE=$(date +'%Y%m%d-%H%M')" >> $GITHUB_ENV
 
       - name: get last 12h commits
         run: |
@@ -84,7 +85,6 @@ jobs:
           echo "EOF" >> $GITHUB_ENV
 
       - name: get existing nightly release body
-        id: existing
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -100,13 +100,20 @@ jobs:
             echo "${COMMITS}"
             echo ""
             echo ""
-          } >> release_notes.txt
+            echo "${BODY}"
+          } > release_notes.txt
+
+      - name: rename ipa
+        run: |
+          mkdir -p archived_ipas
+          cp build/lara.ipa "archived_ipas/lara_${COMMIT}_${FILEDATE}.ipa"
 
       - name: create or update nightly release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release create nightly build/lara.ipa \
+          gh release create nightly \
+            archived_ipas/*.ipa \
             --title "Nightly" \
             --notes-file release_notes.txt \
             --prerelease \
@@ -114,3 +121,11 @@ jobs:
             --title "Nightly" \
             --notes-file release_notes.txt \
             --prerelease
+
+      - name: upload more ipa stuff blah blah
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          for file in archived_ipas/*.ipa; do
+            gh release upload nightly "$file" --clobber=false || true
+          done
