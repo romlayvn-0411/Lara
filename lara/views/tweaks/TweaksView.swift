@@ -30,6 +30,8 @@ struct TweaksView: View {
                         .disabled(!mgr.vfsready)
                     NavigationLink("Passcode Theme", destination: PasscodeView(mgr: mgr))
                         .disabled(!mgr.sbxready)
+                    NavigationLink("SystemColor Patcher", destination: SystemColor(mgr: mgr))
+                        .disabled(!mgr.sbxready || !mgr.vfsready)
                 }
                 
                 Section(header: HeaderLabel(text: "System", icon: "gear")) {

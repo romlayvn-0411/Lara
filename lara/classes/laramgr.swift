@@ -225,6 +225,7 @@ final class laramgr: ObservableObject {
             }
         }
     }
+    
     private static let sbxlogcallback: @convention(c) (UnsafePointer<CChar>?) -> Void = { msg in
         guard let msg = msg else { return }
         let s = String(cString: msg)

@@ -1,8 +1,8 @@
 {
   "name": "lara",
-  "subtitle": "WIP darksword kexploit implement",
+  "subtitle": "A customization toolbox that utilizes DarkSword.",
   "description": "",
-  "iconURL": "https://avatars.githubusercontent.com/u/103732419?v=4",
+  "iconURL": "https://raw.githubusercontent.com/rooootdev/lara/refs/heads/main/lara.png",
   "headerURL": "https://raw.githubusercontent.com/rooootdev/lara/refs/heads/main/icon.png",
   "website": "https://github.com/rooootdev/lara",
   "tintColor": "#4185A9",
@@ -13,19 +13,39 @@
     {
       "name": "lara",
       "bundleIdentifier": "com.roooot.lara",
-      "developerName": "rooootdev",
-      "subtitle": "iOS 18.7.1- & 26.0.1-",
-      "localizedDescription": "lara will at its absolute best only ever support versions up to iOS 26.0.1/iOS 18.7.1. the exploit was patched after those versions.\n\nCurrently tested on iOS 17.2.1 - 26.0.1. If you run lara on your device, and it ends up working, please contact me on discord (@roooot.dev) and tell me:\n\n1. your device\n2. your iOS version\n3. what you tested in lara (eg. Run Exploit, Init KFS, etc.)\n\nIf lara doesnt work on your device, and you want to help the project, please also provide your logs and iOS version.\n\nFeatures:\n\nimplemented:\n• Font Overwrite\n• Custom Overwrite\n• Card Overwrite\n• File Manager (Full Disk r/w)\n• MobileGestalt Editor\n• 3 App Bypass\n• DirtyZero 2\n• 5 App Dock\n• Status Bar Tweaks\n• Hide labels\n• Upside Down\n• Floating Dock (Broken)\n• Grid App Switcher\n• Performance\n\ncoming soon:\n• JIT\n• App Decrypt\n\nknown issues:\n• wont work on M5, A19 and A19 Pro due to MTE\n• on iOS 17.x, the kernel may panic when lara is closed from the app switcher.\n• downloading OTA updates does not work.\n• dirtyzero does not work.\n• ui is buggy on 17.x\n• doesnt work on ipad m1-m4?\n• .aea ota updates do not work.\n\ntips:\ndeleting and redownloading kernelcache is known to fix many issues. do this before asking me for support. closing and reopening the app can fix font change issues. respringing is needed to apply springboard changes such as font changes.\n\ncredits:\n• opa334 for the kernel exploit poc, ChOma and XPF\n• AppInstaller iOS for help with offsets\n• AlfieCG for libgrabkernel2",
+      "developerName": "rooootdev & lara team",
+      "subtitle": "This is the regular release build for lara.",
+      "localizedDescription": "lara is a customization toolbox that utilizes DarkSword. Supports iOS 16.0 - iOS 18.7.1 & iOS 26.0.x, excluding M5 and A19.\nFor more information, check out our GitHub! https://github.com/rooootdev/lara. Join the Discord if you need any help! https://discord.gg/gw8PcRF3Jr.",
       "iconURL": "https://raw.githubusercontent.com/rooootdev/lara/refs/heads/main/lara.png",
       "tintColor": "#5CA399",
       "versions": [
         {
-          "version": "1.2",
-          "date": "2026-04-5",
+          "version": "0.1",
+          "date": "2026-05-1",
           "size": 3450675,
-          "downloadURL": "https://github.com/rooootdev/lara/releases/download/latest/lara.ipa",
+          "downloadURL": "https://github.com/rooootdev/lara/releases/download/0.1/lara_v0.1.ipa",
           "localizedDescription": "",
-          "minOSVersion": "15.0"
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {}
+    },
+    {
+      "name": "lara (Nightly)",
+      "bundleIdentifier": "com.roooot.lara",
+      "developerName": "rooootdev & lara team",
+      "subtitle": "This is the nightly testing build for lara.",
+      "localizedDescription": "This is the nightly testing build for lara. Only use this if you're interested in new features and do not care about stability. lara is a customization toolbox that utilizes DarkSword. Supports iOS 16.0 - iOS 18.7.1 & iOS 26.0.x, excluding M5 and A19.\n\nFor more information, check out our GitHub! https://github.com/rooootdev/lara. Join the Discord if you'd like to report any bugs! https://discord.gg/gw8PcRF3Jr.",
+      "iconURL": "https://raw.githubusercontent.com/rooootdev/lara/refs/heads/main/lara.png",
+      "tintColor": "#5CA399",
+      "versions": [
+        {
+          "version": "0.2",
+          "date": "2026-05-5",
+          "size": 3450675,
+          "downloadURL": "https://github.com/rooootdev/lara/releases/download/nightly/lara.ipa",
+          "localizedDescription": "",
+          "minOSVersion": "16.0"
         }
       ],
       "appPermissions": {}

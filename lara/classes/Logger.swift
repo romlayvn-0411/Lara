@@ -6,6 +6,7 @@
 //  yeah yeah teehee all you want 
 //
 //  I love that you just straight skidded this from jessi lmfao
+//  skidding is my specialty.
 //
 //  Created by roooot on 15.11.25.
 //
