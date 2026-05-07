@@ -28,9 +28,9 @@ fi
 rm -rf "$PWD/build/Payload"
 mkdir -p "$PWD/build/Payload"
 cp -R "$APP_PATH" "$PWD/build/Payload/"
-# patch Info.plist
+
 plutil -replace UIFileSharingEnabled -bool YES "$PWD/build/Payload/lara.app/Info.plist"
-# sign with ldid + entitlements
+
 if ! command -v ldid >/dev/null 2>&1; then
   echo "ERROR: ldid not installed. Install with: brew install ldid" >&2
   exit 1
@@ -39,6 +39,6 @@ ldid -SConfig/lara.entitlements "$PWD/build/Payload/lara.app/lara"
 (cd "$PWD/build" && /usr/bin/zip -qry lara.ipa Payload)
 
 echo
-echo "Build Successful!"
-echo "IPA at: build/lara.ipa"
+echo "build successful!"
+echo "ipa at: build/lara.ipa"
 exit 0

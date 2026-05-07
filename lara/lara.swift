@@ -33,7 +33,7 @@ struct lara: App {
         method_exchangeImplementations(origMethod, fixMethod)
         
         if UserDefaults.standard.string(forKey: "selectedmethod") == nil {
-            UserDefaults.standard.set(method.sbx.rawValue, forKey: "selectedmethod")
+            UserDefaults.standard.set(method.hybrid.rawValue, forKey: "selectedmethod")
         }
         
         if g_isunsupported {
