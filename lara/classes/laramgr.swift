@@ -9,7 +9,8 @@ import Combine
 import Foundation
 import Darwin
 import notify
-import SafariServices
+import UIKit
+import WebKit
 
 final class laramgr: ObservableObject {
     @Published var log: String = ""
@@ -46,7 +47,7 @@ final class laramgr: ObservableObject {
     @Published var sbxfailed: Bool = false
     @Published var sbxrunning: Bool = false
     @Published var rcready: Bool = false
-    @Published var showRespringView: Bool = false
+    @Published var showrespring: Bool = false
     
     @Published var showLogs: Bool = false
     
@@ -159,14 +160,7 @@ final class laramgr: ObservableObject {
     }
     
     func respring() {
-        guard
-            let url = URL(string: "https://roooot.dev/respring.html"),
-            let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-            let rvc = scene.windows.first?.rootViewController
-        else { return }
-        
-        let svc = SFSafariViewController(url: url)
-        rvc.present(svc, animated: true)
+        showrespring = true
     }
     
     func vfsinit(completion: ((Bool) -> Void)? = nil) {

@@ -404,10 +404,6 @@ struct SettingsView: View {
                         }
                         .disabled(downloadingkernelcache)
                         
-                        Button("Fetch Kernelcache") {
-                            mgr.run()
-                        }
-                        
                         HStack {
                             Button("Import Kernelcache from Files") {
                                 guard !importingkernelcache else { return }

@@ -96,6 +96,13 @@ struct lara: App {
                     }
                     .tag(2)
             }
+            .overlay {
+                if mgr.showrespring {
+                    respringview()
+                        .brightness(-1.0)
+                        .ignoresSafeArea()
+                }
+            }
             .sheet(isPresented: $mgr.showLogs) {
                 LogsView(logger: globallogger)
             }

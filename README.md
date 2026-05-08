@@ -55,7 +55,7 @@ Important Notes:
   <a href="https://celloserenity.github.io/altdirect/?url=https://raw.githubusercontent.com/rooootdev/lara/refs/heads/main/source.json" target="_blank">
     <img src="https://github.com/CelloSerenity/altdirect/blob/main/assets/png/AltSource_Blue.png?raw=true" alt="Add AltSource" width="200">
   </a>
-  <a href="https://github.com/rooootdev/lara/releases/download/latest/lara.ipa" target="_blank">
+  <a href="https://github.com/rooootdev/lara/releases/download/0.1/lara_v0.1.ipa" target="_blank">
     <img src="https://github.com/CelloSerenity/altdirect/blob/main/assets/png/Download_Blue.png?raw=true" alt="Download .ipa" width="200">
   </a>
 </p>
