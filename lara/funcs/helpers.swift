@@ -8,3 +8,7 @@
 func hex(_ value: UInt64) -> String {
     "0x" + String(value, radix: 16, uppercase: true)
 }
+
+func hex(_ value: UInt32) -> String {
+    hex(UInt64(value))
+}

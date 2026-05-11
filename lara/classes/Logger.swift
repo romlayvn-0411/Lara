@@ -35,7 +35,7 @@ class Logger: ObservableObject {
     private let ignoredlogsubstrings = [
         "Faulty glyph",
         "outline detected - replacing with a space/null glyph",
-        "Gesture: System gesture gate timed out",
+        "Gesture:",
         "tcp_output [",
         "Error Domain=",
         "com.apple.UIKit.dragInitiation",
@@ -92,6 +92,7 @@ class Logger: ObservableObject {
         "lara[",
         "};",
         "NSLayoutConstraint",
+        "   \"",
     ]
 
     init() {

@@ -14,6 +14,7 @@ import WebKit
 
 final class laramgr: ObservableObject {
     @Published var log: String = ""
+    @Published var hasOffsets: Bool = false
     @Published var dsrunning: Bool = false
     @Published var dsready: Bool = false
     @Published var dsattempted: Bool = false
@@ -47,6 +48,7 @@ final class laramgr: ObservableObject {
     @Published var sbxfailed: Bool = false
     @Published var sbxrunning: Bool = false
     @Published var rcready: Bool = false
+    @Published var rcfailed: Bool = false
     @Published var showrespring: Bool = false
     
     @Published var showLogs: Bool = false
@@ -58,7 +60,7 @@ final class laramgr: ObservableObject {
     static let fontpath = "/System/Library/Fonts/Core/SFUI.ttf"
     static let italicfontpath = "/System/Library/Fonts/Core/SFUIItalic.ttf"
     static let monofontpath = "/System/Library/Fonts/Core/SFUIMono.ttf"
-    private init() {}
+    init() {}
 
     struct AppInfo {
         let executable: String

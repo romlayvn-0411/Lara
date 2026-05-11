@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-public struct LinkCreditCell: View {
-    var image: Image
+public struct LinkCreditCell<Icon: View>: View {
+    var image: Icon
     var name: String
     var description: String
     var url: String
     @Environment(\.openURL) var openURL
     
-    public init(image: Image, name: String, description: String, url: String = "") {
-        self.image = image
+    public init(name: String, description: String, url: String = "", @ViewBuilder image: () -> Icon) {
+        self.image = image()
         self.name = name
         self.description = description
         self.url = url
@@ -26,7 +26,7 @@ public struct LinkCreditCell: View {
             if !url.isEmpty { openURL(URL(string: url)!) }
         }) {
             HStack(spacing: spacing.creditCell) {
-                LinkCreditIcon(image: image)
+                image
                 VStack(alignment: .leading) {
                     Text(name)
                         .fontWeight(.semibold)
@@ -50,32 +50,42 @@ public struct LinkCreditCell: View {
 
 // icon for credits cell
 public struct LinkCreditIcon: View {
-    var image: Image
+    var url: String
     
-    init(image: Image) {
-        self.image = image
+    init(url: String) {
+        self.url = url
     }
     
     public var body: some View {
         if #available(iOS 19.0, *) {
-            image
-                .resizable()
-                .scaledToFit()
-                .frame(width: 40, height: 40)
-                .background(Color(.systemGray6))
-                .clipShape(.capsule)
-                .glassEffect(.regular, in: .capsule)
+            AsyncImage(url: URL(string: url)) { image in
+                image
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 40, height: 40)
+                    .background(Color(.systemGray6))
+                    .clipShape(Circle())
+                    .glassEffect(.regular, in: Circle())
+            } placeholder: {
+                ProgressView()
+                    .frame(width: 40, height: 40)
+            }
         } else {
-            image
-                .resizable()
-                .scaledToFit()
-                .frame(width: 40, height: 40)
-                .background(Color(.systemGray6))
-                .clipShape(.rect(cornerRadius: 12))
-                .overlay {
-                    RoundedRectangle(cornerRadius: 12)
-                        .stroke(Color.primary.opacity(0.2), lineWidth: 1)
-                }
+            AsyncImage(url: URL(string: url)) { image in
+                image
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 40, height: 40)
+                    .background(Color(.systemGray6))
+                    .clipShape(Circle())
+                    .overlay {
+                        Circle()
+                            .stroke(Color.primary.opacity(0.2), lineWidth: 1)
+                    }
+            } placeholder: {
+                ProgressView()
+                    .frame(width: 40, height: 40)
+            }
         }
     }
 }

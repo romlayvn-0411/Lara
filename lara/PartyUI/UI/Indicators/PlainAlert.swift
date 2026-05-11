@@ -21,7 +21,7 @@ public struct PlainAlert: View {
     }
     
     public var body: some View {
-        HStack(spacing: 10) {
+        HStack(spacing: 14) {
             if !icon.isEmpty {
                 Image(systemName: icon)
                     .foregroundStyle(color)

@@ -49,5 +49,9 @@ func isunsupported() -> Bool {
         return true
     }
     
+    if isdebugged() {
+        return true
+    }
+    
     return false
 }

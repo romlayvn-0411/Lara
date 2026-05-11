@@ -12,10 +12,12 @@
 #import "apfs.h"
 #import "vfs.h"
 #import "sbx.h"
+#import "IconServices.h"
 #import "rc.h"
 #import "RemoteCall.h"
 
 long FindCacheDataOffset(const char *mgKey);
+void LaraClearIconCache(void);
 
 @interface UIDevice(Private)
 + (BOOL)_hasHomeButton;

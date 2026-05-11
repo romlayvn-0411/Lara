@@ -1,449 +1,469 @@
 //
-//  DarkBoardView.swift
+//  DarkBoard.swift
 //  lara
 //
-//  Icon theming using VFS and SBX+chown
+//  Created by ruter on 24.04.26.
+//  skidded from Cowabunga, credit goes to lemin and co.
 //
 
 import SwiftUI
 import UniformTypeIdentifiers
+import UIKit
+
+private struct DarkBoardAlert: Identifiable {
+    let id = UUID()
+    let message: String
+}
+
+private struct OverrideChoice: Identifiable {
+    let theme: LaraIconTheme
+    let image: UIImage
+
+    var id: String { theme.name }
+}
 
 struct DarkBoardView: View {
-    @ObservedObject var mgr = laramgr.shared
-    
-    @State private var installedApps: [AppInfo] = []
-    @State private var selectedApp: AppInfo?
-    @State private var showThemePicker = false
-    @State private var showThemeImporter = false
-    @State private var plainPngThemes: [String] = []
-    @State private var importedThemes: [ImportedTheme] = []
-    @State private var statusMessage: String?
-    @State private var isWorking = false
-    @State private var iconCache: [String: UIImage] = [:]
-    
-    private let iconThemePath = "/var/mobile/darkboard"
-    
-    struct ImportedTheme: Identifiable, Hashable {
-        let id: String
-        let name: String
-        let path: String
-        let iconCount: Int
-    }
-    
-    struct AppInfo: Identifiable, Hashable {
-        let id: String
-        let name: String
-        let bundleId: String
-        let bundlePath: String
-    }
-    
+    @ObservedObject private var manager = IconThemeManager.shared
+    @ObservedObject private var mgr = laramgr.shared
+
+    @State private var showImporter = false
+    @State private var alert: DarkBoardAlert?
+    @State private var pendingImportURL: URL?
+
+    private let previewBundleIDs = [
+        "com.apple.mobilephone",
+        "com.apple.mobilesafari",
+        "com.apple.mobileslideshow",
+        "com.apple.camera",
+        "com.apple.AppStore",
+        "com.apple.Preferences",
+        "com.apple.Music",
+        "com.apple.calculator",
+    ]
+
+    private let grid = [GridItem(.adaptive(minimum: 160), spacing: 12)]
+
     var body: some View {
-        List {
-            Section {
-                Button {
-                    scanApps()
-                } label: {
-                    if isWorking {
-                        HStack { ProgressView(); Text("Scanning...") }
-                    } else {
-                        Text("Refresh Apps")
-                    }
+        ZStack(alignment: .bottom) {
+            ScrollView {
+                VStack(spacing: 16) {
+                    helperCards
+                    themeGrid
                 }
-                .disabled(isWorking)
-            } header: { Text("Actions") } footer: {
-                Text("Place PNG files as bundleid.png in /var/mobile/darkboard")
+                .padding()
+                .padding(.bottom, 90)
             }
-            
-            Section {
-                if installedApps.isEmpty {
-                    Text("No apps found").foregroundColor(.secondary)
-                } else {
-                    ForEach(installedApps) { app in
-                        Button {
-                            selectedApp = app
-                            showThemePicker = true
-                        } label: {
-                            HStack(spacing: 12) {
-                                iconView(for: app)
-                                VStack(alignment: .leading) {
-                                    Text(app.name).font(.headline)
-                                    Text(app.bundleId).font(.caption).foregroundColor(.secondary)
-                                }
-                                Spacer()
-                                Image(systemName: "paintbrush").foregroundColor(.secondary)
-                            }
-                        }
-                    }
+
+            if !manager.themes.isEmpty {
+                Button {
+                    applyThemes()
+                } label: {
+                    Text("Apply Themes")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(manager.selectedThemeNames.isEmpty ? Color.secondary.opacity(0.25) : Color.accentColor)
+                        .foregroundStyle(.white)
+                        .clipShape(RoundedRectangle(cornerRadius: 14))
+                        .padding()
                 }
-            } header: { Text("Installed Apps") }
-            
-            if !importedThemes.isEmpty {
-                Section {
-                    ForEach(importedThemes) { theme in
-                        NavigationLink {
-                            ThemeDetailView(theme: theme, installedApps: installedApps, onApply: applyThemeIcon)
-                        } label: {
-                            HStack {
-                                VStack(alignment: .leading) {
-                                    Text(theme.name).font(.headline)
-                                    Text("\(theme.iconCount) icons").font(.caption).foregroundColor(.secondary)
-                                }
-                                Spacer()
-                            }
-                        }
-                    }
-                } header: { Text("Imported Themes") }
+                .disabled(manager.selectedThemeNames.isEmpty || manager.isApplying)
             }
         }
         .navigationTitle("DarkBoard")
         .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button { showThemeImporter = true } label: {
-                    Image(systemName: "folder.badge.plus")
+            ToolbarItem(placement: .topBarLeading) {
+                Button(role: .destructive) {
+                    manager.clearSelectionsForFullReset()
+                    applyThemes()
+                } label: {
+                    Image(systemName: "arrow.counterclockwise")
                 }
-                .disabled(isWorking)
+                .disabled(manager.isApplying)
+            }
+            ToolbarItem(placement: .topBarTrailing) {
+                Button {
+                    showImporter = true
+                } label: {
+                    Image(systemName: "square.and.arrow.down")
+                }
+                .disabled(manager.isApplying)
             }
         }
-        .fileImporter(isPresented: $showThemeImporter, allowedContentTypes: [.folder], allowsMultipleSelection: false) { result in
-            handleThemeImport(result)
+        .sheet(isPresented: $showImporter) {
+            ThemeImportPicker(selectedURL: $pendingImportURL)
         }
-        .alert("Status", isPresented: .constant(statusMessage != nil)) {
-            Button("OK") { statusMessage = nil }
-        } message: { Text(statusMessage ?? "") }
-        .sheet(isPresented: $showThemePicker) {
-            if let app = selectedApp {
-                ThemePickerSheet(app: app, themePath: iconThemePath, onSelect: { applyIcon(to: app, themeFile: $0) })
+        .alert(item: $alert) { alert in
+            Alert(title: Text("DarkBoard"), message: Text(alert.message), dismissButton: .default(Text("OK")))
+        }
+        .overlay {
+            if manager.isApplying {
+                progressOverlay(title: "Applying Icons", message: manager.applyMessage, progress: manager.applyProgress)
             }
         }
-        .onAppear { scanApps(); scanThemes() }
+        .onAppear {
+            manager.refreshThemes()
+            try? manager.refreshApps()
+            manager.startPendingFixupIfPossible()
+        }
+        .onChange(of: pendingImportURL) { url in
+            guard let url else { return }
+            handleImport(url)
+            pendingImportURL = nil
+        }
     }
-    
+
+    private var helperCards: some View {
+        VStack(spacing: 12) {
+            if !mgr.sbxready {
+                Text("Initialize SBX first. This icon themer uses SBX-backed file reads and writes, then restores backups after the respring fixup.")
+                    .font(.footnote)
+                    .foregroundStyle(.secondary)
+                    .padding()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .background(.thinMaterial)
+                    .clipShape(RoundedRectangle(cornerRadius: 16))
+            }
+
+            HStack(spacing: 12) {
+                VStack(alignment: .leading, spacing: 8) {
+                    Text("Themes")
+                        .font(.headline)
+                    Text("\(manager.themes.count) imported")
+                        .foregroundStyle(.secondary)
+                        .font(.caption)
+                }
+                Spacer()
+                NavigationLink("Explore") {
+                    DarkBoardExploreView()
+                }
+                .buttonStyle(.bordered)
+                NavigationLink("Overrides") {
+                    IconOverridesView()
+                }
+                .buttonStyle(.bordered)
+            }
+            .padding()
+            .background(.thinMaterial)
+            .clipShape(RoundedRectangle(cornerRadius: 16))
+
+            if manager.themes.isEmpty {
+                Text("Import a folder, `.theme`, or `.zip` containing `IconBundles/<bundle-id>.png` icons.")
+                    .font(.footnote)
+                    .foregroundStyle(.secondary)
+                    .padding()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .background(.thinMaterial)
+                    .clipShape(RoundedRectangle(cornerRadius: 16))
+            }
+        }
+    }
+
+    private var themeGrid: some View {
+        LazyVGrid(columns: grid, spacing: 12) {
+            ForEach(manager.themes) { theme in
+                ThemeCardView(
+                    theme: theme,
+                    previews: manager.icons(forAppIDs: previewBundleIDs, from: theme),
+                    selectionIndex: manager.selectedThemeNames.firstIndex(of: theme.name),
+                    onToggle: { manager.toggleThemeSelection(theme) },
+                    onDelete: { removeTheme(theme) }
+                )
+            }
+        }
+    }
+
+    private func applyThemes() {
+        guard mgr.sbxready else {
+            alert = DarkBoardAlert(message: "SBX is not initialized. Run the exploit, initialize SBX, then apply again.")
+            return
+        }
+
+        DispatchQueue.global(qos: .userInitiated).async {
+            do {
+                let errors = try manager.applyThemes()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
+                    if errors.isEmpty {
+                        alert = DarkBoardAlert(message: "Icons applied. Respring now. After reopening lara, initialize SBX again so the post-respring icon fixup can restore the original bundle files.")
+                    } else {
+                        alert = DarkBoardAlert(message: "Applied with some errors:\n\n" + errors.joined(separator: "\n\n"))
+                    }
+                }
+            } catch {
+                DispatchQueue.main.async {
+                    alert = DarkBoardAlert(message: error.localizedDescription)
+                }
+            }
+        }
+    }
+
+    private func handleImport(_ url: URL) {
+        let accessed = url.startAccessingSecurityScopedResource()
+        defer {
+            if accessed {
+                url.stopAccessingSecurityScopedResource()
+            }
+        }
+
+        do {
+            try manager.importTheme(from: url)
+        } catch {
+            alert = DarkBoardAlert(message: error.localizedDescription)
+        }
+    }
+
+    private func removeTheme(_ theme: LaraIconTheme) {
+        do {
+            try manager.removeTheme(theme)
+        } catch {
+            alert = DarkBoardAlert(message: error.localizedDescription)
+        }
+    }
+
     @ViewBuilder
-    private func iconView(for app: AppInfo) -> some View {
-        if let icon = iconCache[app.bundlePath] {
-            Image(uiImage: icon).resizable().frame(width: 40, height: 40).clipShape(RoundedRectangle(cornerRadius: 9))
-        } else {
-            Image("unknown").resizable().frame(width: 40, height: 40).clipShape(RoundedRectangle(cornerRadius: 9))
-        }
-    }
-    
-    private func scanApps() {
-        guard !isWorking else { return }
-        isWorking = true
-        
-        DispatchQueue.global(qos: .userInitiated).async {
-            var apps: [AppInfo] = []
-            var cache: [String: UIImage] = [:]
-            let fm = FileManager.default
-            let roots = ["/private/var/containers/Bundle/Application", "/var/containers/Bundle/Application"]
-            var seen = Set<String>()
-            
-            for root in roots {
-                guard let entries = try? fm.contentsOfDirectory(atPath: root) else { continue }
-                for uuid in entries {
-                    let dir = root + "/" + uuid
-                    var isDir: ObjCBool = false
-                    guard fm.fileExists(atPath: dir, isDirectory: &isDir), isDir.boolValue else { continue }
-                    guard let appsInDir = try? fm.contentsOfDirectory(atPath: dir) else { continue }
-                    
-                    for app in appsInDir where app.hasSuffix(".app") {
-                        let bundlePath = dir + "/" + app
-                        let normalized = bundlePath.hasPrefix("/private/") ? String(bundlePath.dropFirst(8)) : bundlePath
-                        guard !seen.contains(normalized) else { continue }
-                        
-                        let info = NSDictionary(contentsOfFile: bundlePath + "/Info.plist") as? [String: Any]
-                        let name = info?["CFBundleDisplayName"] as? String ?? info?["CFBundleName"] as? String ?? app
-                        let bundleId = info?["CFBundleIdentifier"] as? String ?? "unknown"
-                        seen.insert(normalized)
-                        
-                        if let icon = loadAppIcon(bundlePath: bundlePath) { cache[bundlePath] = icon }
-                        apps.append(AppInfo(id: bundlePath, name: name, bundleId: bundleId, bundlePath: bundlePath))
-                    }
-                }
+    private func progressOverlay(title: String, message: String, progress: Double) -> some View {
+        ZStack {
+            Color.black.opacity(0.15).ignoresSafeArea()
+            VStack(spacing: 12) {
+                ProgressView(value: progress, total: 1.0)
+                Text(title).font(.headline)
+                Text(message)
+                    .font(.footnote)
+                    .foregroundStyle(.secondary)
+                    .multilineTextAlignment(.center)
             }
-            
-            apps.sort { $0.name.lowercased() < $1.name.lowercased() }
-            DispatchQueue.main.async {
-                self.installedApps = apps
-                self.iconCache = cache
-                self.isWorking = false
-            }
-        }
-    }
-    
-    private func scanThemes() {
-        let fm = FileManager.default
-        if let files = try? fm.contentsOfDirectory(atPath: iconThemePath) {
-            plainPngThemes = files.filter { $0.hasSuffix(".png") }
-        }
-        scanImportedThemes()
-    }
-    
-    private func scanImportedThemes() {
-        let fm = FileManager.default
-        var themes: [ImportedTheme] = []
-        guard let entries = try? fm.contentsOfDirectory(atPath: iconThemePath) else {
-            importedThemes = []; return
-        }
-        
-        for entry in entries where entry.hasSuffix(".theme") {
-            let themePath = iconThemePath + "/" + entry
-            var isDir: ObjCBool = false
-            guard fm.fileExists(atPath: themePath, isDirectory: &isDir), isDir.boolValue else { continue }
-            
-            var themeName = entry.replacingOccurrences(of: ".theme", with: "")
-            let infoPlistPath = themePath + "/Info.plist"
-            if let info = NSDictionary(contentsOfFile: infoPlistPath) as? [String: Any],
-               let name = info["PackageName"] as? String { themeName = name }
-            
-            var iconCount = 0
-            let iconBundlesPath = themePath + "/IconBundles"
-            if let icons = try? fm.contentsOfDirectory(atPath: iconBundlesPath) {
-                iconCount = icons.filter { $0.hasSuffix(".png") }.count
-            }
-            
-            themes.append(ImportedTheme(id: themePath, name: themeName, path: themePath, iconCount: iconCount))
-        }
-        importedThemes = themes
-    }
-    
-    private func handleThemeImport(_ result: Result<[URL], Error>) {
-        switch result {
-        case .success(let urls):
-            guard let url = urls.first else { return }
-            _ = url.startAccessingSecurityScopedResource()
-            defer { url.stopAccessingSecurityScopedResource() }
-            isWorking = true
-            
-            DispatchQueue.global(qos: .userInitiated).async {
-                let fm = FileManager.default
-                var themeName = url.lastPathComponent
-                if !themeName.hasSuffix(".theme") { themeName = themeName + ".theme" }
-                let destPath = self.iconThemePath + "/" + themeName
-                
-                do {
-                    try? fm.removeItem(atPath: destPath)
-                    try fm.copyItem(at: url, to: URL(fileURLWithPath: destPath))
-                    DispatchQueue.main.async {
-                        self.scanImportedThemes()
-                        self.statusMessage = "Theme imported: \(themeName)"
-                    }
-                } catch {
-                    DispatchQueue.main.async {
-                        self.statusMessage = "Import failed: \(error.localizedDescription)"
-                    }
-                }
-                DispatchQueue.main.async { self.isWorking = false }
-            }
-        case .failure(let error):
-            statusMessage = "Import failed: \(error.localizedDescription)"
-        }
-    }
-    
-    private func loadAppIcon(bundlePath: String) -> UIImage? {
-        guard let bundle = Bundle(path: bundlePath) else { return nil }
-        if let icons = bundle.infoDictionary?["CFBundleIcons"] as? [String: Any],
-           let primary = icons["CFBundlePrimaryIcon"] as? [String: Any],
-           let files = primary["CFBundleIconFiles"] as? [String] {
-            for name in files.reversed() {
-                if let image = UIImage(named: name, in: bundle, compatibleWith: nil) { return image }
-            }
-        }
-        if let name = bundle.infoDictionary?["CFBundleIconFile"] as? String,
-           let image = UIImage(named: name, in: bundle, compatibleWith: nil) { return image }
-        return nil
-    }
-    
-    private func findIconPath(in bundlePath: String) -> String? {
-        let fm = FileManager.default
-        let candidates = ["AppIcon60x60@2x.png", "AppIcon60x60@3x.png", "AppIcon76x76@2x.png"]
-        for name in candidates {
-            let path = bundlePath + "/" + name
-            if fm.fileExists(atPath: path) { return path }
-        }
-        guard let bundle = Bundle(path: bundlePath),
-              let icons = bundle.infoDictionary?["CFBundleIcons"] as? [String: Any],
-              let primary = icons["CFBundlePrimaryIcon"] as? [String: Any],
-              let files = primary["CFBundleIconFiles"] as? [String] else { return nil }
-        for name in files.reversed() where name.contains("@2x") {
-            let path = bundlePath + "/" + name + ".png"
-            if fm.fileExists(atPath: path) { return path }
-        }
-        if let firstFile = files.first {
-            let path = bundlePath + "/" + firstFile + ".png"
-            if fm.fileExists(atPath: path) { return path }
-        }
-        return nil
-    }
-    
-    private func applyIcon(to app: AppInfo, themeFile: String) {
-        isWorking = true
-        showThemePicker = false
-        
-        let sourcePath = iconThemePath + "/" + themeFile
-        guard FileManager.default.fileExists(atPath: sourcePath) else {
-            statusMessage = "Theme file not found"; isWorking = false; return
-        }
-        guard let targetPath = findIconPath(in: app.bundlePath) else {
-            statusMessage = "Could not find icon path"; isWorking = false; return
-        }
-        
-        DispatchQueue.global(qos: .userInitiated).async {
-            let result = self.mgr.lara_overwritefile(target: targetPath, source: sourcePath)
-            DispatchQueue.main.async {
-                self.isWorking = false
-                if result.ok {
-                    self.statusMessage = "Icon applied! Respring to see changes."
-                    self.mgr.logmsg("(darkboard) applied \(themeFile) to \(app.bundleId)")
-                } else {
-                    self.statusMessage = "Failed: \(result.message)"
-                }
-            }
-        }
-    }
-    
-    private func applyThemeIcon(to app: AppInfo, iconPath: String) {
-        isWorking = true
-        guard let targetPath = findIconPath(in: app.bundlePath) else {
-            statusMessage = "Could not find icon path"; isWorking = false; return
-        }
-        DispatchQueue.global(qos: .userInitiated).async {
-            let result = self.mgr.lara_overwritefile(target: targetPath, source: iconPath)
-            DispatchQueue.main.async {
-                self.isWorking = false
-                if result.ok {
-                    self.statusMessage = "Icon applied! Respring to see changes."
-                    self.mgr.logmsg("(darkboard) applied icon to \(app.bundleId)")
-                } else {
-                    self.statusMessage = "Failed: \(result.message)"
-                }
-            }
+            .padding(20)
+            .frame(maxWidth: 320)
+            .background(.regularMaterial)
+            .clipShape(RoundedRectangle(cornerRadius: 18))
         }
     }
 }
 
-struct ThemePickerSheet: View {
-    let app: DarkBoardView.AppInfo
-    let themePath: String
-    let onSelect: (String) -> Void
-    
-    @Environment(\.dismiss) private var dismiss
-    @State private var themeFiles: [String] = []
-    @State private var selectedTheme: String?
-    @State private var previewImage: UIImage?
-    
+private struct ThemeCardView: View {
+    let theme: LaraIconTheme
+    let previews: [UIImage?]
+    let selectionIndex: Int?
+    let onToggle: () -> Void
+    let onDelete: () -> Void
+
     var body: some View {
-        NavigationView {
-            List {
-                Section {
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text(app.name).font(.headline)
-                            Text(app.bundleId).font(.caption).foregroundColor(.secondary)
+        VStack(alignment: .leading, spacing: 12) {
+            ZStack {
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(Color.secondary.opacity(0.15))
+                    .frame(height: 94)
+
+                if previews.compactMap({ $0 }).count >= 4 {
+                    VStack(spacing: 4) {
+                        HStack(spacing: 4) {
+                            ForEach(0..<4, id: \.self) { idx in
+                                previewCell(previews[safe: idx] ?? nil)
+                            }
                         }
-                        Spacer()
-                        if let img = previewImage {
-                            Image(uiImage: img).resizable().frame(width: 60, height: 60).clipShape(RoundedRectangle(cornerRadius: 13))
-                        }
-                    }
-                }
-                
-                Section {
-                    ForEach(themeFiles, id: \.self) { file in
-                        Button {
-                            selectedTheme = file
-                            loadPreview(for: file)
-                        } label: {
-                            HStack {
-                                Text(file.replacingOccurrences(of: ".png", with: ""))
-                                Spacer()
-                                if selectedTheme == file {
-                                    Image(systemName: "checkmark").foregroundColor(.blue)
-                                }
+                        HStack(spacing: 4) {
+                            ForEach(4..<8, id: \.self) { idx in
+                                previewCell(previews[safe: idx] ?? nil)
                             }
                         }
                     }
-                } header: { Text("Available Themes") }
-            }
-            .navigationTitle("Select Theme")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") { dismiss() }
-                }
-                ToolbarItem(placement: .confirmationAction) {
-                    Button("Apply") {
-                        if let theme = selectedTheme { onSelect(theme); dismiss() }
-                    }
-                    .disabled(selectedTheme == nil)
+                } else {
+                    Text("Not enough icons for preview")
+                        .font(.caption2)
+                        .foregroundStyle(.secondary)
                 }
             }
+
+            HStack {
+                Text(theme.name)
+                    .font(.headline)
+                    .lineLimit(1)
+                Spacer()
+                Text("\(theme.iconCount)")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+
+            Button(action: onToggle) {
+                Text(selectionIndex == nil ? "Select" : "Selected: \(selectionIndex! + 1)")
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 10)
+                    .background(selectionIndex == nil ? Color.secondary.opacity(0.2) : Color.accentColor)
+                    .foregroundStyle(selectionIndex == nil ? Color.primary : Color.white)
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+            }
+
+            Button(role: .destructive, action: onDelete) {
+                Text("Remove")
+                    .font(.caption)
+            }
         }
-        .onAppear { scanThemes() }
+        .padding()
+        .background(.thinMaterial)
+        .clipShape(RoundedRectangle(cornerRadius: 18))
     }
-    
-    private func scanThemes() {
-        let fm = FileManager.default
-        if let files = try? fm.contentsOfDirectory(atPath: themePath) {
-            themeFiles = files.filter { $0.hasSuffix(".png") }
+
+    @ViewBuilder
+    private func previewCell(_ image: UIImage?) -> some View {
+        if let image {
+            Image(uiImage: image)
+                .resizable()
+                .frame(width: 28, height: 28)
+                .clipShape(RoundedRectangle(cornerRadius: 7))
+        } else {
+            RoundedRectangle(cornerRadius: 7)
+                .fill(Color.clear)
+                .frame(width: 28, height: 28)
         }
-    }
-    
-    private func loadPreview(for file: String) {
-        previewImage = UIImage(contentsOfFile: themePath + "/" + file)
     }
 }
 
-struct ThemeDetailView: View {
-    let theme: DarkBoardView.ImportedTheme
-    let installedApps: [DarkBoardView.AppInfo]
-    let onApply: (DarkBoardView.AppInfo, String) -> Void
-    
-    @State private var matchingApps: [(String, DarkBoardView.AppInfo)] = []
-    
+struct IconOverridesView: View {
+    @ObservedObject private var manager = IconThemeManager.shared
+
+    @State private var search = ""
+
     var body: some View {
         List {
-            Section {
-                Text("\(matchingApps.count) matching apps").foregroundColor(.secondary)
-            }
-            
-            ForEach(matchingApps, id: \.1.id) { match in
-                Button {
-                    onApply(match.1, theme.path + "/IconBundles/" + match.0)
+            ForEach(filteredApps, id: \.id) { app in
+                NavigationLink {
+                    OverrideSelectionView(app: app)
                 } label: {
-                    HStack {
+                    HStack(spacing: 12) {
+                        if let icon = app.loadPreviewIcon() {
+                            Image(uiImage: icon)
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                                .clipShape(RoundedRectangle(cornerRadius: 9))
+                        } else {
+                            Image("unknown")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                                .clipShape(RoundedRectangle(cornerRadius: 9))
+                        }
                         VStack(alignment: .leading) {
-                            Text(match.1.name).font(.headline)
-                            Text(match.0).font(.caption).foregroundColor(.secondary)
+                            Text(app.name)
+                            Text(app.bundleIdentifier)
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
                         }
                         Spacer()
-                        Image(systemName: "paintbrush").foregroundColor(.secondary)
+                        if manager.iconOverrides[app.bundleIdentifier] != nil {
+                            Image(systemName: "lock.fill")
+                                .foregroundStyle(Color.accentColor)
+                        }
                     }
                 }
             }
         }
-        .navigationTitle(theme.name)
-        .onAppear { loadThemeIcons() }
+        .navigationTitle("Overrides")
+        .searchable(text: $search)
+        .onAppear {
+            try? manager.refreshApps()
+        }
     }
-    
-    private func loadThemeIcons() {
-        let fm = FileManager.default
-        let iconBundlesPath = theme.path + "/IconBundles"
-        guard let icons = try? fm.contentsOfDirectory(atPath: iconBundlesPath) else { return }
-        
-        var matches: [(String, DarkBoardView.AppInfo)] = []
-        for iconFile in icons where iconFile.hasSuffix(".png") {
-            var iconName = iconFile
-                .replacingOccurrences(of: "-large.png", with: "")
-                .replacingOccurrences(of: "-large@2x.png", with: "")
-                .replacingOccurrences(of: ".png", with: "")
-            
-            for app in installedApps {
-                if app.bundleId == iconName || app.bundleId.lowercased() == iconName.lowercased() {
-                    matches.append((iconFile, app))
+
+    private var filteredApps: [LaraThemedApp] {
+        let visibleApps = manager.installedApps.filter { !$0.hiddenFromSpringboard }
+        guard !search.isEmpty else { return visibleApps }
+        return visibleApps.filter {
+            $0.name.localizedCaseInsensitiveContains(search) || $0.bundleIdentifier.localizedCaseInsensitiveContains(search)
+        }
+    }
+}
+
+private struct OverrideSelectionView: View {
+    @ObservedObject private var manager = IconThemeManager.shared
+
+    let app: LaraThemedApp
+
+    @Environment(\.dismiss) private var dismiss
+
+    var body: some View {
+        List {
+            if manager.iconOverrides[app.bundleIdentifier] != nil {
+                Button(role: .destructive) {
+                    manager.removeOverride(for: app.bundleIdentifier)
+                    dismiss()
+                } label: {
+                    Text("Remove Override")
+                }
+            }
+
+            ForEach(choices) { choice in
+                Button {
+                    manager.setOverride(bundleID: app.bundleIdentifier, themeName: choice.theme.name)
+                    dismiss()
+                } label: {
+                    HStack(spacing: 12) {
+                        Image(uiImage: choice.image)
+                            .resizable()
+                            .frame(width: 60, height: 60)
+                            .clipShape(RoundedRectangle(cornerRadius: 14))
+                        VStack(alignment: .leading) {
+                            Text(choice.theme.name)
+                            Text(choice.theme.name == manager.iconOverrides[app.bundleIdentifier] ? "Current override" : "Tap to set")
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                        }
+                        Spacer()
+                    }
                 }
             }
         }
-        matchingApps = matches.sorted { $0.1.name.lowercased() < $1.1.name.lowercased() }
+        .navigationTitle(app.name)
+        .navigationBarTitleDisplayMode(.inline)
+    }
+
+    private var choices: [OverrideChoice] {
+        manager.availableOverrideChoices(for: app.bundleIdentifier).map { OverrideChoice(theme: $0.theme, image: $0.image) }
+    }
+}
+
+private extension Array {
+    subscript(safe index: Int) -> Element? {
+        indices.contains(index) ? self[index] : nil
+    }
+}
+
+private struct ThemeImportPicker: UIViewControllerRepresentable {
+    @Binding var selectedURL: URL?
+    @Environment(\.dismiss) private var dismiss
+
+    func makeCoordinator() -> Coordinator {
+        Coordinator(selectedURL: $selectedURL, dismiss: dismiss)
+    }
+
+    func makeUIViewController(context: Context) -> UIDocumentPickerViewController {
+        var documentTypes = [UTType.folder.identifier]
+        documentTypes.append(UTType.zip.identifier)
+        if let themeType = UTType(filenameExtension: "theme")?.identifier {
+            documentTypes.append(themeType)
+        }
+
+        let picker = UIDocumentPickerViewController(documentTypes: documentTypes, in: .open)
+        picker.delegate = context.coordinator
+        picker.allowsMultipleSelection = false
+        return picker
+    }
+
+    func updateUIViewController(_ uiViewController: UIDocumentPickerViewController, context: Context) {}
+
+    final class Coordinator: NSObject, UIDocumentPickerDelegate {
+        @Binding var selectedURL: URL?
+        let dismissAction: DismissAction
+
+        init(selectedURL: Binding<URL?>, dismiss: DismissAction) {
+            self._selectedURL = selectedURL
+            self.dismissAction = dismiss
+        }
+
+        func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
+            selectedURL = urls.first
+            dismissAction()
+        }
+
+        func documentPickerWasCancelled(_ controller: UIDocumentPickerViewController) {
+            dismissAction()
+        }
     }
 }
