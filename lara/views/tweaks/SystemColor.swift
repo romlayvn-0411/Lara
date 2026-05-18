@@ -175,10 +175,10 @@ struct SystemColor: View {
                                     var r: CGFloat = 0, g: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
                                     ui.getRed(&r, green: &g, blue: &b, alpha: &a)
                                     
-                                    entries[i].r = UInt8(r * 255)
-                                    entries[i].g = UInt8(g * 255)
-                                    entries[i].b = UInt8(b * 255)
-                                    entries[i].a = UInt8(a * 255)
+                                    entries[i].r = clamptouint8(r)
+                                    entries[i].g = clamptouint8(g)
+                                    entries[i].b = clamptouint8(b)
+                                    entries[i].a = clamptouint8(a)
                                 }
                             ))
                             .labelsHidden()
@@ -312,5 +312,9 @@ struct SystemColor: View {
         status = res.ok ? "Patched!" : "Failed: \(res.message)"
 
         try? FileManager.default.removeItem(atPath: tmp)
+    }
+    
+    func clamptouint8(_ value: CGFloat) -> UInt8 {
+        UInt8(max(0, min(255, Int(value * 255))))
     }
 }

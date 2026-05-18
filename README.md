@@ -4,7 +4,7 @@
   <br>
   <h1>LARA</h1>
 
-  <p>A customization toolbox that utilizes DarkSword. iOS 16.0 - iOS 18.7.1 & iOS 26.0.x, excluding M5 and A19.</p>
+  <p>A customization toolbox that utilizes DarkSword. iOS 17.0 - iOS 18.7.1 & iOS 26.0.x, excluding M5 and A19.</p>
   <p>star this repo please :P</p>
 </div>
 

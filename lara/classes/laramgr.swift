@@ -166,6 +166,7 @@ final class laramgr: ObservableObject {
     }
     
     func vfsinit(completion: ((Bool) -> Void)? = nil) {
+        guard dsready, hasOffsets, !vfsrunning else { return }
         vfs_setlogcallback(laramgr.vfslogcallback)
         vfs_setprogresscallback { progress in
             DispatchQueue.main.async {
@@ -197,7 +198,7 @@ final class laramgr: ObservableObject {
     }
     
     func sbxescape(completion: ((Bool) -> Void)? = nil) {
-        guard dsready, !sbxrunning else { return }
+        guard dsready, hasOffsets, !sbxrunning else { return }
         sbxattempted = true
         sbxfailed = false
         sbxrunning = true
@@ -401,30 +402,26 @@ final class laramgr: ObservableObject {
                 return false
             }
     
-            for _ in 0..<5 {
-                let ok = path.withCString { vfs_zerofile($0) } == 0
-    
-                if !ok {
-                    self.logmsg("(vfs) zerofile failed")
-                    return false
-                }
+            let ok = path.withCString { vfs_zerofile($0) } == 0
+
+            if !ok {
+                self.logmsg("(vfs) zerofile failed")
+                return false
             }
-    
-            self.logmsg("(vfs) zeroed \(path) 5 times")
+            
+            self.logmsg("(vfs) zeroed \(path)")
             return true
         } else {
-            for _ in 0..<5 {
-                let result = path.withCString { cpath in
-                    vfs_zeropage(cpath, 0)
-                }
-    
-                if result != 0 {
-                    self.logmsg("(vfs) zeropage failed")
-                    return false
-                }
+            let result = path.withCString { cpath in
+                vfs_zeropage(cpath, 0)
+            }
+
+            if result != 0 {
+                self.logmsg("(vfs) zeropage failed")
+                return false
             }
     
-            self.logmsg("(vfs) zeroed first page of \(path) 5 times")
+            self.logmsg("(vfs) zeroed first page of \(path)")
             return true
         }
     }
@@ -563,6 +560,64 @@ final class laramgr: ObservableObject {
             return nil
         }
         return appList
+    }
+    
+    func setplistvalue(path: String, key: (key: String, value: Any?), force: Bool = false) -> (ok: Bool, message: String) {
+        do {
+            let fm = FileManager.default
+            var dict = NSMutableDictionary()
+            if !fm.fileExists(atPath: path) {
+                if !force { return (false, "file at \(path) does not exist or couldn't be found") }
+            } else {
+                if let dictfromplist = NSMutableDictionary(contentsOf: URL(fileURLWithPath: path)) {
+                    dict = dictfromplist
+                } else {
+                    return (false, "could not convert plist at \(path) to readable data")
+                }
+            }
+            if let value = key.value {
+                dict[key.key] = value
+            } else {
+                dict.removeObject(forKey: key.key)
+            }
+            let data = try PropertyListSerialization.data(
+                fromPropertyList: dict,
+                format: .binary,
+                options: 0
+            )
+            let result = self.lara_overwritefile(
+                target: path,
+                data: data
+            )
+            if result.ok {
+                return (true, "overwrote plist at path \(path)")
+            } else {
+                return(false, "overwrite failed: \(result.message)")
+            }
+        } catch {
+            return (false, "an error occurred: \(error)")
+        }
+    }
+
+    func getplistvalue(path: String, key: String) -> (ok: Bool, message: String, value: Any?) {
+        do {
+            let fm = FileManager.default
+            if fm.fileExists(atPath: path) {
+                if let dict = NSDictionary(contentsOf: URL(fileURLWithPath: path)) {
+                    if let value = dict[key] {
+                        return (true, "success", value)
+                    } else {
+                        return (false, "key \(key) not found", nil)
+                    }
+                } else {
+                    return(false, "could not convert plist at \(path) to readable data", nil)
+                }
+            } else {
+                return (false, "file at \(path) does not exist or couldn't be found", nil)
+            }
+        } catch {
+            return (false, "an error occurred: \(error)", nil)
+        }
     }
 
     @discardableResult

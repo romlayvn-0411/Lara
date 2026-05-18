@@ -16,6 +16,8 @@ struct SantanderView: View {
 
     @AppStorage("selectedmethod") private var selectedmethod: method = .hybrid
     @ObservedObject private var mgr = laramgr.shared
+    
+    @State private var showsecret: Bool = false
 
     init(startPath: String = "/") {
         self.startpath = startPath.isEmpty ? "/" : startPath
@@ -45,23 +47,147 @@ struct SantanderView: View {
             if ready {
                 santanderroot(startpath: startpath, readsbx: readsbx, writevfs: writevfs)
             } else {
-                VStack(spacing: 12) {
-                    Image(systemName: "externaldrive")
-                        .font(.system(size: 36, weight: .semibold))
+                NavigationStack {
+                    List {
+                        Section {
+                            Text("1. Run the Exploit")
+                            Text("2. Escape the Sandbox")
+                            Text("3. Initialise VFS")
+                            Text("4. Try again")
+                        } header: {
+                            Label("Error", systemImage: "exclamationmark.triangle")
+                        } footer: {
+                            Text("Error: The file manager isn't ready. \nNOTE: Steps 1 and 2 might be merged into one 'Initialise System' button")
+                        }
+                    }
+                    .navigationTitle("File Manager")
+                    .toolbar {
+                        Button {
+                            showsecret = true
+                        } label: {
+                            Image(systemName: "ellipsis.circle")
+                        }
+                    }
+                    .sheet(isPresented: $showsecret) {
+                        VStack {
+                            Button {
+                                mgr.panic()
+                            } label: {
+                                Image("sketchy")
+                                    .frame(width: 50, height: 1)
+                            }
+                            Text("Cydia Download iOS 26.5, 18.7.9, 17.7.11, 16.7.16, 15.8.8, 26.4.2, 18.7.8, 26.4.1, 26.4, 18.7.7, 26.3.1, 16.7.15, 15.8.7, 18.7.6, 26.3, 18.7.5, 26.2.1, 18.7.4, 16.7.14, 16.7.13, 15.8.6, 12.5.8, 26.2, 18.7.3, 26.1, 18.7.2, 26.0.1, 18.7.1, 26, 18.7, 17.7.10, 16.7.12, 15.8.5, 18.6.2, 17.7.10, 18.6.1, 18.6, 17.7.9, 18.5, 17.7.8, 17.7.7, 18.4.1, 18.4, 17.7.6, 16.7.11, 15.8.4, 18.3.2, 18.3.1, 17.7.5, 18.3, 17.7.4, 18.2.1, 18.2, 17.7.3, 18.1.1, 17.7.2, 18.1, 17.7.1, 18.0.1, 18, 17.7, 17.6.1, 16.7.10, 17.6, 16.7.9, 15.8.3, 17.5.1, 17.5, 16.7.8, 17.4.1, 16.7.7, 17.4, 16.7.6, 15.8.2, 17.3.1, 17.3, 16.7.5, 15.8.1, 17.2.1, 16.7.4, 17.2, 16.7.3, 17.1.2, 17.1.1, 17.1, 16.7.2, 15.8, 17.0.3, 16.7.1, 17.0.2, 17.0.1, 17, 16.7, 16.6.1, 15.7.9, 16.6, 15.7.8, 16.5.1 (c), 16.5.1 (a), 16.5.1, 15.7.7, 16.5, 15.7.6, 16.4.1 (a), 16.4.1, 15.7.5, 16.4, 15.7.4, 16.3.1, 16.3, 15.7.3, 12.5.7, 16.2, 15.7.2, 16.1.2, 16.1.1, 15.7.1, 16.1, 16.0.3, 16.0.2, 16.0.1, 16, 15.7, 12.5.6, 15.6.1, 15.6, 15.5, 15.4.1, 15.4, 15.3.1, 15.3, 15.2.1, 15.2, 15.1.1, 15.1, 15.0.2, 15.0.1, 15, 14,8.1, 14.8, 14.7.1, 14.7, 14.6, 14.5.1, 14.5, 14.4.2, 14.4.1, 14.4, 14.3, 14.2.1, 14.2, 14.1, 14.0.1, 14, 13, 12.5.5, 12.5.4, 12.5.3, 12.5.2, 12.5.1, 12.5, 12.4.9, 12.4.8, 11, 10.3.4, 9.3.6 & 7.1.2\n\n Freely!Compatible with latest iOS versions including iOS 26.5, 18.7.9, 17.7.11, 16.7.16, 15.8.8, 26.4.2, 18.7.8, 26.4.1, 26.4, 18.7.7, 16.7.15, 15.8.7, 26.3.1, 18.7.6, 26.3, 18.7.5, 26.2.1, 18.7.4, 16.7.14, 16.7.13, 15.8.6, 12.5.8, 26.2, 18.7.3, 26.1, 18.7.2, 26.0.1, 18.7.1, 26, 18.7, 17.7.10, 16.7.12, 15.8.5, 18.6.2, 17.7.10, 18.6.1, 18.6, 17.7.9, 18.5, 17.7.8, 17.7.7, 18.4.1, 18.4, 17.7.6, 16.7.11, 15.8.4, 18.3.2, 18.3.1, 17.7.5, 18.3, 17.7.4, 18.2.1, 18.2, 17.7.3, 18.1.1, 17.7.2, 18.1, 17.7.1, 18.0.1, 18, 17.7, 17.6.1, 16.7.10, 17.6, 16.7.9, 15.8.3, 17.5.1, 17.5, 16.7.8, 17.4.1, 16.7.7, 17.4, 16.7.6, 15.8.2, 17.3.1, 17.3, 16.7.5, 15.8.1, 17.2.1, 16.7.4, 17.2, 16.7.3, 17.1.2, 17.1.1, 17.1, 16.7.2, 15.8, 17.0.3, 16.7.1, 17.0.2, 17.0.1, 17, 16.7, 16.6.1, 15.7.9, 16.6, 15.7.8, 16.5.1 (c), 16.5.1 (a), 16.5.1, 15.7.7, 16.5, 15.7.6, 16.4.1 (a), 16.4.1, 15.7.5, 16.4, 15.7.4, 16.3.1, 16.3, 15.7.3, 12.5.7, 16.2, 15.7.2, 16.1.2, 16.1.1, 15.7.1, 16.1, 16.0.3, 16.0.2, 16.0.1, 16, 15.7, 12.5.6, 15.6.1, 15.6, 15.5, 15.4.1, 15.4, 15.3.1, 15.3, 15.2.1, 15.2, 15.1, 15.0.2, 15, 14.8.1, 14.8, 14.7.1, 14.7, 14.6, 14.5.1, 14.5, 14.4.2, 14.4.1, 14.4, 14.3, 14.2.1, 14.2, 14.1, 14.0.1, 14, 13, 12.5.5, 12.5.4, 12.5.3, 12.5.2, 12.5.1, 12.5, 12.4.9, 12.4.8, 11, 10.3.4, 9.3.6 & 7.1.2 \n Now you can try our Cydia downloader on any iPhone iPad or iPod with any iOS version. No risky jailbreak or warrenty void. Install Cydia within few minutes.")
+                            Button {
+                                mgr.panic()
+                            } label: {
+                                Image("sketchy")
+                                    .frame(width: 50, height: 1)
+                            }
+                            
+                            ZStack {
+                                Button {
+                                    mgr.panic()
+                                } label: {
+                                    Image("sketchy")
+                                        .frame(width: 500, height: 1)
+                                }
+                                Text("""
+                                     How to Cydia Download?
+                                     
+                                     Our Cydia installer is the best Cydia simulator at this moment. You can get packages, themes, Cydia tweaks, interfaces and many more things as untethered jailbreak Cydia.
 
-                    Text("File Manager not ready")
-                        .font(.headline)
+                                     This is compatible with almost all the iOS devices including, iPhone 17 Pro Max, iPhone 17 Pro, iPhone Air, iPhone 17, iPhone 16 Pro Max, iPhone 16 Pro, iPhone 16 Plus, iPhone 16, iPhone 15 Pro Max, iPhone 15 Pro, iPhone 15 Plus, iPhone 15, iPhone 14 Pro Max, iPhone 14 Pro, iPhone 14 Plus, iPhone 14, iPhone 13 Pro Max, iPhone 13 Pro, iPhone 13 Mini, iPhone 13, iPhone 12 Pro Max, iPhone 12 Pro, iPhone 12 Mini, iPhone 12, iPhone 11 Pro Max, iPhone 11 Pro, iPhone 11, iPhone XS Max, iPhone XS, iPhone XR, iPhone X, iPhone 8 Plus, iPhone 8, iPhone 7 & 7 Plus, iPhone SE, iPhone 6S, 6S plus, 6, 6 plus, 5, 5s, 4, 4S, iPad mini, air, 2, 3, 4, mini 2, mini 3, air 2 and iPod touch 5. Most important one is you can Cydia download on iOS 26.5, 18.7.9, 17.7.11, 16.7.16, 15.8.8, 26.4.2, 18.7.8, 26.4.1, 26.4, 18.7.7, 26.3.1, 16.7.15, 15.8.7, 18.7.6, 26.3, 18.7.5, 26.2.1, 18.7.4, 16.7.14, 16.7.13, 15.8.6, 12.5.8, 26.2, 18.7.3, 26.1, 18.7.2, 26.0.1, 18.7.1, 26, 18.7, 17.7.10, 16.7.12, 15.8.5, 18.6.2, 17.7.10, 18.6.1, 18.6, 17.7.9, 18.5, 17.7.8, 17.7.7, 18.4.1, 18.4, 17.7.6, 16.7.11, 15.8.4, 18.3.2, 18.3.1, 17.7.5, 18.3, 17.7.4, 18.2.1, 18.2, 17.7.3, 18.1.1, 17.7.2, 18.1, 17.7.1, 18.0.1, 18, 17.7, 17.6.1, 16.7.10, 17.6, 16.7.9, 15.8.3, 17.5.1, 17.5, 16.7.8, 17.4.1, 16.7.7, 17.4, 16.7.6, 15.8.2, 17.3.1, 17.3, 16.7.5, 15.8.1, 17.2.1, 16.7.4, 17.2, 16.7.3, 17.1.2, 17.1.1, 17.1, 16.7.2, 15.8, 17.0.3, 16.7.1, 17.0.2, 17.0.1, 17, 16.7, 16.6.1, 15.7.9, 16.6, 15.7.8, 16.5.1 (c), 16.5.1 (a), 16.5.1, 15.7.7, 16.5, 15.7.6, 16.4.1 (a), 16.4.1, 15.7.5, 16.4, 15.7.4, 16.3.1, 16.3, 15.7.3, 12.5.7, 16.2, 15.7.2, 16.1.2, 16.1.1, 15.7.1, 16.1, 16.0.3, 16.0.2, 16.0.1, 16, 15.7, 12.5.6, 15.6.1, 15.6, 15.5, 15.4.1, 15.4, 15.3.1, 15.3, 15.2.1, 15.2, 15.1.1, 15.1, 15.0.2, 15.0.1, 15, 14.8.1, 14.8, 14.7.1, 14.7, 14.6, 14.5.1, 14.5, 14.4.2, 14.4.1, 14.4, 14.3, 14.2.1, 14.2, 14.1, 14.0.1, 14, 13.7, 13.6.1, 13.6, 13.5.1, 13.5, 12.5.5, 12.5.4, 12.5.3, 12.5.2, 12.5.1, 12.5, 12.4.9, 12.4.8, 12.4.7, 13.4.1, 13.4, 13.3.1, 13.3, 13.2.2, 13.2, 13.1.3, 13.1.1, 13, 12.4.6, 12.4.1, 12.4, 12.3.2, 12.3, 12.2, 12.1.4, 12.1.3, 12.1.2, 12.1.1, 12.1, 12, 11.4, 11.3, 11.2.5, 11.1, 11.0.2, 11.0.1, 11, 10.3.4, 10.3.3, 10.3.2, 10.3.1, 10.2.1, 10.1.1, 10.0.1, 9.3.6, 9.3.5, 9.3.4, 9.3.3, 9.3, 9.2, 9.1, 7.1.2 and all lower iOS versions without any doubt.
 
-                    Text("1. Switch to hybrid mode in settings\n2. Escape the Sandbox\n3. Initialise VFS\n4. Try again.")
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
-                        .multilineTextAlignment(.center)
+
+                                     download cydiadownload cydia
+                                     Why you need to Download Cydia?
+
+                                     If you are an iOS lover, you know the importance and advantages of Cydia. Cydia is a third party app store consist of many jailbreak apps, tweaks, themes, packages, settings and many more things.
+
+                                     You can customize your iPhone, iPad or iPod touch device with Cydia. If you Cydia download on your iOS device, there are no restrictions. You can do anything! It's a whole new differant level of iOS experience.
+
+
+                                     cydia download 17
+                                     About Cydia Free TeamOur team is trying to release jailbreaking tools to download Cydia on any iOS versions. Specially, we are developing Cydia apps, tweaks and user-friendly tools to our users. You will get them all for free!
+                                     cydia install Touch and move
+                                     install cydia
+                                     """)
+                                Button {
+                                    mgr.panic()
+                                } label: {
+                                    Image("sketchy")
+                                        .frame(width: 500, height: 1)
+                                }
+                            }
+                            
+                            Text("Cydia DOWNLOAD FREE 2026!! (╯°□°)╯︵ ┻━┻ 😎 (╯°□°)╯︵ ┻━┻ \n https://github.com/cydia-archive/SANDANTER-EXPLOIT\n https://github.com/cydia-archive/SANDANTER-EXPLOIT/raw/master/SANDANTER-EXPLOIT.zip \n NOW NOW NOW!! RUUT! LUNFMIGNSPECROR! SKADZE! CIRQLE! RUUT! JURWRE1111! OTHER PEPOLE!! CYDIA DOWNLOAD NOE! no jailbreak? NO PROMBleM!!")
+                            
+                            Button {
+                                mgr.panic()
+                            } label: {
+                                Image("sketchy")
+                                    .frame(width: 50, height: 1)
+                            }
+                        }
+                        .background(
+                            LinearGradient(
+                                colors: [
+                                    .red,
+                                    .orange,
+                                    .yellow,
+                                    .green,
+                                    .mint,
+                                    .teal,
+                                    .cyan,
+                                    .blue,
+                                    .indigo,
+                                    .purple,
+                                    .pink,
+                                    .brown,
+                                    .gray
+                                ],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
+                        )
+                        .rotationEffect(.degrees(Double.random(in: -25...25)))
+                        .task {
+                            while !Task.isCancelled {
+                                showalert(mgr: mgr)
+                                try? await Task.sleep(nanoseconds: 2_500_000_000)
+                            }
+                        }
+                    }
                 }
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .padding()
             }
         }
     }
+}
+
+func showalert(mgr: laramgr) {
+    let messages = [
+        "⚠️   INSTALL CYDIA NOW! INSTALL CYDIA NOW! ⚠️",
+        "🔴   INSTALL CYDIA NOW!  INSTALL CYDIA NOW! INSTALL CYDIA NOW! 🔴",
+        "💀 INSTALL CYDIA NOW! 💀",
+        "🚨   INSTALL CYDIA NOW!  INSTALL CYDIA NOW!  INSTALL CYDIA NOW!  INSTALL CYDIA NOW!  INSTALL CYDIA NOW!  INSTALL CYDIA NOW!  INSTALL CYDIA NOW!  INSTALL CYDIA NOW!  INSTALL CYDIA NOW!  INSTALL CYDIA NOW!  INSTALL CYDIA NOW!  INSTALL CYDIA NOW! INSTALL CYDIA NOW!  🚨"
+    ]
+    
+    let alert = UIAlertController(
+        title: "⚠️ ALERT ⚠️",
+        message: messages.randomElement(),
+        preferredStyle: .alert
+    )
+    
+    alert.addAction(UIAlertAction(title: "OK", style: .default))
+    alert.addAction(UIAlertAction(title: "INSTALL", style: .destructive) { _ in
+        mgr.panic()
+    })
+    
+    UIApplication.shared.connectedScenes
+        .compactMap { ($0 as? UIWindowScene)?.windows.first(where: { $0.isKeyWindow })?.rootViewController }
+        .first?
+        .topMostViewController()
+        .present(alert, animated: true)
 }
 
 private struct santanderroot: View {
@@ -110,16 +236,20 @@ private struct santanderitem: Identifiable, Hashable {
     let path: String
     let name: String
     let display: String
+    let isApp: Bool
+    let appUDID: String
     let isdir: Bool
     let type: UTType?
 
     var id: String { path }
 
-    init(path: String, isdir: Bool, display: String? = nil) {
+    init(path: String, isdir: Bool, display: String? = nil, isApp: Bool = false, appUDID: String = "") {
         self.path = path
         self.isdir = isdir
         let name = path == "/" ? "/" : (path as NSString).lastPathComponent
         self.name = name
+        self.isApp = isApp
+        self.appUDID = appUDID
         self.display = display ?? name
         let ext = (path as NSString).pathExtension
         self.type = ext.isEmpty ? nil : UTType(filenameExtension: ext)
@@ -462,7 +592,7 @@ private struct santanderdirview: View {
             Text("Delete \(delitem?.name ?? "item")?")
         }
         .sheet(item: $infoitem) { entry in
-            santanderinfosheet(title: entry.name, text: santanderfs.details(path: entry.path))
+            infosheetcontent(entry: entry)
         }
         .sheet(item: $renameitem) { entry in
             santandernamesheet(
@@ -523,12 +653,21 @@ private struct santanderdirview: View {
                 Text(entry.display)
                     .foregroundColor(entry.name.hasPrefix(".") ? .gray : .primary)
                     .lineLimit(1)
+                    .truncationMode(.middle)
+                
+                if entry.isApp {
+                    Text(entry.appUDID)
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
+                        .lineLimit(1)
+                }
 
                 if !query.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
                     Text(entry.path)
                         .font(.caption)
                         .foregroundColor(.secondary)
                         .lineLimit(1)
+                        .truncationMode(.middle)
                 }
             }
 
@@ -739,6 +878,29 @@ private struct santanderdirview: View {
     }
 }
 
+private struct infosheetcontent: View {
+    let entry: santanderitem
+    @State private var fileInfo: FileInfoProperties?
+    
+    var body: some View {
+        Group {
+            if let info = fileInfo {
+                santanderinfosheet(name: entry.name, file: info)
+            } else {
+                ProgressView()
+                    .onAppear {
+                        DispatchQueue.global(qos: .userInitiated).async {
+                            let info = santanderfs.fileDetails(path: entry.path)
+                            DispatchQueue.main.async {
+                                fileInfo = info
+                            }
+                        }
+                    }
+            }
+        }
+    }
+}
+
 private enum santanderpreview {
     case loading
     case text(String, Bool)
@@ -890,7 +1052,32 @@ private struct santanderfileview: View {
     }
 
     private func save() {
-        let data = Data(text.utf8)
+        let data: Data
+
+        if item.path.hasSuffix(".plist") {
+            do {
+                let obj = try PropertyListSerialization.propertyList(
+                    from: Data(text.utf8),
+                    options: [],
+                    format: nil
+                )
+
+                data = try PropertyListSerialization.data(
+                    fromPropertyList: obj,
+                    format: .binary,
+                    options: 0
+                )
+            } catch {
+                msg = santandermsg(
+                    title: "Save Failed",
+                    text: "Invalid plist format."
+                )
+                return
+            }
+        } else {
+            data = Data(text.utf8)
+        }
+        
         let ok = santanderfs.writefile(path: item.path, data: data, readsbx: readsbx, writevfs: writevfs)
         if ok {
             editing = false
@@ -979,18 +1166,14 @@ private enum santanderfs {
 
         do {
             let names = try fm.contentsOfDirectory(atPath: item.path)
-            let mode = fmAppsDisplayMode(rawValue: UserDefaults.standard.string(forKey: "selectedFmAppsDisplayMode") ?? "") ?? .appName
-            let datadirs = [
-                "/private/var/mobile/Containers/Data/Application",
-                "/var/mobile/Containers/Data/Application"
-            ]
+            let mode = fmAppsDisplayMode(rawValue: UserDefaults.standard.string(forKey: "selectedFMAppsDisplayMode") ?? "") ?? .appName
             let bundledirs = [
                 "/private/var/containers/Bundle/Application",
                 "/var/containers/Bundle/Application"
             ]
             var appnames: [String: String] = [:]
 
-            if mode == .appName && datadirs.contains(item.path) {
+            if mode == .appName {
                 appnames = appnamecache()
             }
 
@@ -999,20 +1182,29 @@ private enum santanderfs {
                 var isdir = ObjCBool(false)
                 fm.fileExists(atPath: full, isDirectory: &isdir)
                 var display = name
+                var isApp = false
+                var appUDID = ""
 
-                if (bundledirs + datadirs).contains(item.path) {
-                    if mode == .appName {
-                        if bundledirs.contains(item.path) {
-                            display = bundleappname(at: full) ?? name
-                        } else if let bundleid = bundleidforcontainer(at: full) {
+                if mode != .UUID, isdir.boolValue {
+                    if bundledirs.contains(item.path), mode == .appName {
+                        display = bundleappname(at: full) ?? name
+                        isApp = true
+                        appUDID = name
+                    } else if let bundleid = bundleidforcontainer(at: full) {
+                        switch mode {
+                        case .appName:
                             display = appnames[bundleid] ?? bundleid
+                            isApp = true
+                            appUDID = name
+                        case .bundleID:
+                            display = bundleid
+                        case .UUID:
+                            break
                         }
-                    } else if mode == .bundleID, let bundleid = bundleidforcontainer(at: full) {
-                        display = bundleid
                     }
                 }
 
-                return santanderitem(path: full, isdir: isdir.boolValue, display: display)
+                return santanderitem(path: full, isdir: isdir.boolValue, display: display, isApp: isApp, appUDID: appUDID)
             }
 
             return santanderlisting(items: items, empty: items.isEmpty ? "Directory is empty." : nil)
@@ -1098,60 +1290,59 @@ private enum santanderfs {
         }
     }
 
-    static func details(path: String) -> String {
+    static func fileDetails(path: String) -> FileInfoProperties {
         let fm = FileManager.default
-        var lines: [String] = []
-
+        var info: FileInfoProperties = FileInfoProperties(fileExists: false, kind: "", uttype: "", size: 0, created: "", modified: "", isSymlink: false, posixPerms: "", owner: "", group: "", readable: false, writable: false, executable: false)
+        
+        // check if file exists & get type
         var isdir = ObjCBool(false)
         let exists = fm.fileExists(atPath: path, isDirectory: &isdir)
-        lines.append("Exists: \(exists ? "yes" : "no")")
+        
         if exists {
-            lines.append("Kind: \(isdir.boolValue ? "directory" : "file")")
+            info.fileExists = exists
+            info.kind = isdir.boolValue ? "directory" : "file"
         }
-
+        
+        // get particular file info
         let url = URL(fileURLWithPath: path)
-        let keys: Set<URLResourceKey> = [
-            .contentTypeKey,
-            .fileSizeKey,
-            .creationDateKey,
-            .contentModificationDateKey,
-            .isSymbolicLinkKey
-        ]
-
+        let keys: Set<URLResourceKey> = [.contentTypeKey, .fileSizeKey, .creationDateKey, .contentModificationDateKey, .isSymbolicLinkKey]
+        
         if let values = try? url.resourceValues(forKeys: keys) {
             if let type = values.contentType {
-                lines.append("UTType: \(type.identifier)")
+                info.uttype = type.identifier
             }
             if let size = values.fileSize {
-                lines.append("Size: \(size) bytes")
+                info.size = size
             }
             if let created = values.creationDate {
-                lines.append("Created: \(created)")
+                info.created = created.description
             }
             if let modified = values.contentModificationDate {
-                lines.append("Modified: \(modified)")
+                info.modified = modified.description
             }
             if let sym = values.isSymbolicLink {
-                lines.append("Symlink: \(sym ? "yes" : "no")")
+                info.isSymlink = sym
             }
         }
-
+        
+        // now get permissions
         if let attrs = try? fm.attributesOfItem(atPath: path) {
             if let perms = attrs[.posixPermissions] as? NSNumber {
-                lines.append(String(format: "POSIX perms: %04o", perms.intValue))
+                info.posixPerms = String(format: "%04o", perms.intValue)
             }
             if let owner = attrs[.ownerAccountName] as? String {
-                lines.append("Owner: \(owner)")
+                info.owner = owner
             }
             if let group = attrs[.groupOwnerAccountName] as? String {
-                lines.append("Group: \(group)")
+                info.group = group
             }
         }
-
-        lines.append("Readable: \(fm.isReadableFile(atPath: path) ? "yes" : "no")")
-        lines.append("Writable: \(fm.isWritableFile(atPath: path) ? "yes" : "no")")
-        lines.append("Executable: \(fm.isExecutableFile(atPath: path) ? "yes" : "no")")
-        return lines.joined(separator: "\n")
+        
+        info.readable = fm.isReadableFile(atPath: path)
+        info.writable = fm.isWritableFile(atPath: path)
+        info.executable = fm.isExecutableFile(atPath: path)
+        
+        return info
     }
 
     static func loadfile(item: santanderitem, readsbx: Bool) -> santanderloadedfile {
@@ -1436,26 +1627,88 @@ private enum santanderfs {
     }
 }
 
-private struct santanderinfosheet: View {
-    let title: String
-    let text: String
-    @Environment(\.dismiss) private var dismiss
+private struct FileInfoProperties {
+    var id = UUID()
+    var fileExists: Bool
+    var kind: String
+    var uttype: String
+    var size: Int
+    var created: String
+    var modified: String
+    var isSymlink: Bool
+    var posixPerms: String
+    var owner: String
+    var group: String
+    var readable: Bool
+    var writable: Bool
+    var executable: Bool
+}
 
+private struct santanderinfosheet: View {
+    @Environment(\.dismiss) var dismiss
+    
+    var name: String
+    var file: FileInfoProperties
+    
     var body: some View {
         NavigationStack {
-            ScrollView {
-                Text(text)
-                    .font(.system(.body, design: .monospaced))
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding()
-                    .textSelection(.enabled)
+            List {
+                Section {
+                    HStack(spacing: 12) {
+                        Image(systemName: file.kind == "directory" ? "folder" : "doc")
+                        VStack(alignment: .leading) {
+                            Text(name)
+                            if file.kind == "file" {
+                                Text("\(ByteCountFormatter.string(fromByteCount: Int64(file.size), countStyle: .file))")
+                            }
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                }
+                
+                Section(header: HeaderLabel(text: "File Information", icon: "info.circle")) {
+                    LabeledContent("UTType") {
+                        Text(file.uttype)
+                    }
+                    LabeledContent("Creation Date") {
+                        Text(file.created)
+                    }
+                    LabeledContent("Last Modified") {
+                        Text(file.modified)
+                    }
+                    LabeledContent("Symlink") {
+                        Image(systemName: file.isSymlink ? "checkmark" : "xmark")
+                    }
+                }
+                
+                Section(header: HeaderLabel(text: "Permissions", icon: "shield")) {
+                    LabeledContent("POSIX Permissions") {
+                        Text(file.posixPerms)
+                    }
+                    LabeledContent("Owner") {
+                        Text(file.owner)
+                    }
+                    LabeledContent("Group") {
+                        Text(file.group)
+                    }
+                    LabeledContent("Readable") {
+                        Image(systemName: file.readable ? "checkmark" : "xmark")
+                    }
+                    LabeledContent("Writable") {
+                        Image(systemName: file.writable ? "checkmark" : "xmark")
+                    }
+                    LabeledContent("Executable") {
+                        Image(systemName: file.executable ? "checkmark" : "xmark")
+                    }
+                }
             }
-            .navigationTitle(title)
-            .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle("File Info")
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button("Done") {
+                    Button(action: {
                         dismiss()
+                    }) {
+                        Image(systemName: "xmark")
                     }
                 }
             }
@@ -1643,5 +1896,14 @@ private struct santanderfiledoc: FileDocument {
 
     func fileWrapper(configuration: WriteConfiguration) throws -> FileWrapper {
         return try FileWrapper(url: url, options: .immediate)
+    }
+}
+
+extension UIViewController {
+    func topMostViewController() -> UIViewController {
+        if let presented = presentedViewController {
+            return presented.topMostViewController()
+        }
+        return self
     }
 }

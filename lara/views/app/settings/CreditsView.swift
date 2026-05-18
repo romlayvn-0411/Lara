@@ -38,6 +38,9 @@ struct CreditsView: View {
                 LinkCreditCell(name: "Skadz", description: "Respring Method", url: "https://github.com/skadz108") {
                     LinkCreditIcon(url: "https://github.com/skadz108.png")
                 }
+                LinkCreditCell(name: "hxhlb", description: "Various bug fixes", url: "https://github.com/hxhlb") {
+                    LinkCreditIcon(url: "https://github.com/hxhlb.png")
+                }
             }
             .navigationTitle("Credits")
         }

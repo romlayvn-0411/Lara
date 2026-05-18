@@ -18,7 +18,7 @@ struct scannedapp: Identifiable, Hashable {
 }
 
 struct AppsView: View {
-    @ObservedObject var mgr: laramgr
+    @EnvironmentObject private var mgr: laramgr
     @AppStorage("selectedmethod") private var selectedmethod: method = .vfs
     
     @State private var scannedapps: [scannedapp] = []
@@ -275,6 +275,7 @@ struct AppsView: View {
             Section {
                 Button {
                     sbx3apbypass()
+                    scanappssbx()
                 } label: {
                     Text("Bypass 3 App Limit")
                 }

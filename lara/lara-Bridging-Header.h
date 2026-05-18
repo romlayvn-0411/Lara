@@ -9,6 +9,7 @@
 #import "darksword.h"
 #import "offsets.h"
 #import "utils.h"
+#import "vnode.h"
 #import "apfs.h"
 #import "vfs.h"
 #import "sbx.h"
@@ -16,7 +17,7 @@
 #import "rc.h"
 #import "RemoteCall.h"
 
-long FindCacheDataOffset(const char *mgKey);
+long findcachedataoff(const char *mgkey);
 void LaraClearIconCache(void);
 
 @interface UIDevice(Private)

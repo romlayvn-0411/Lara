@@ -158,3 +158,6 @@ extension UIDocumentPickerViewController {
         return fix_init(forOpeningContentTypes: contentTypes, asCopy: true)
     }
 }
+
+// make strings compatiable with errors
+extension String: @retroactive Error {}
