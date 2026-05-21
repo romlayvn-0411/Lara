@@ -41,6 +41,9 @@ struct CreditsView: View {
                 LinkCreditCell(name: "hxhlb", description: "Various bug fixes", url: "https://github.com/hxhlb") {
                     LinkCreditIcon(url: "https://github.com/hxhlb.png")
                 }
+                LinkCreditCell(name: "leminlimez", description: "Various Cowabunga Tweaks", url: "https://github.com/leminlimez") {
+                    LinkCreditIcon(url: "https://github.com/leminlimez.png")
+                }
             }
             .navigationTitle("Credits")
         }
